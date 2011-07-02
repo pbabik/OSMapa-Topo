@@ -1,0 +1,48 @@
+OSMapa Topo
+
+Styl dla renderera Mapnik, umożliwiający utworzenie mapy turystycznej z danych projektu OpenStreetMap.
+
+WYMAGANIA:
+
+* Mapnik 0.7.1 _z dodaną obsługą parametru stroke-offset_. W tym celu trzeba:
+	- ściągnąć kod źródłowy Mapnika,
+	- rozpakować go, 
+	- ściągnąć do katalogu, do którego rozpakowano źródła następujący patch: wget http://trac.mapnik.org/raw-attachment/ticket/180/mapnik0.7.1-offsets_v3.patch
+	- zaaplikować patch: patch -p0 -i mapnik0.7.1-offsets_v3.patch
+	- skompilować tak spreparowany kod i zainstalować Mapnika, szczegółowe instrukcje są tu: http://trac.mapnik.org/wiki/UbuntuInstallation
+* osm2pgsql,
+* PostgreSQL + PostGIS,
+* python-psycopg - dla szlaków turystycznych,
+* python-progressbar - dla szlaków turystycznych,
+* GDAL - dla poziomic.
+
+SPOSÓB UŻYCIA:
+
+* przygotuj bazę PostGIS o nazwie gis,
+* ściągnij dane OSM dla interesującego obszaru,
+* importuj dane do bazy przy pomocy programu osm2pgsql. należy zwrócić uwagę na następujące parametry:
+
+	-s - slim mode, wymagany do zadziałania skryptu ekstrahującego szlaki,
+	-S <nazwa_pliku.style> - plik określający, jakie kolumny atrybutów utworzyć - koniecznie użyj załączonego pliku osm2pgsql.style, możesz go przerobić, ale na oryginalnym default.style - nie zadziała!
+	-E <kod_EPSG> - układ współrzędnych, ja używam PUWG 1992 (kod EPSG: 2180) - możesz go zmienić np. na UTM, pamiętając, że trzeba będzie zmienić definicje we wszystkich mapfiles!
+
+* zmodyfikuj mapfiles oraz skrypt copy_tracks.py w zakresie danych dostępu do bazy PostGIS - nazwy użytkownika i hasła,
+* wykonaj skrypt copy_tracks.py : python copy_tracks.py -n gis
+
+Mapa podkładowa oraz mapa szlaków powinny już działać!
+
+ABY WYGENEROWAĆ POZIOMICE:
+
+* przygotuj raster z modelem terenu - w przykładzie jest dem.tif - w takim układzie jakim chcesz mieć mapę. pomocne będą narzędzia gdal_translate i gdalwarp.
+* wygeneruj poziomice w formacie SHP:
+gdal_contour -a height -i 10 dem.tif contour.shp
+* importuj poziomice do bazy (musisz być zalogowany jako użytkownik mający prawo zapisu w bazie, np. jako postgres - sudo su postgres):
+shp2pgsql -c -d -s <kod EPSG> -I contour.shp public.contour > contour.sql
+psql -d gis -f contour.sql
+Alternatywnie możesz użyć Quantum GIS (plus wtyczki: GDALTools, PostGIS Manager) i wszystko wyklikać :-)
+
+
+UWAGA: przezroczyste mapfiles (poziomice oraz szlaki) nie chcą się wyświetlać w mapnik-viewer. To błąd programu, a nie mapfile - z nik2img, ogcserver, TileCache działają poprawnie.
+
+
+
