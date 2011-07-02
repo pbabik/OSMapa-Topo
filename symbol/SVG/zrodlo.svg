@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="zrodlo.svg"
+   inkscape:export-filename="/home/babik/GIS/symbol/zrodlo16.png"
+   inkscape:export-xdpi="10.159279"
+   inkscape:export-ydpi="10.159279">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="265.42586"
+     inkscape:cy="63.649815"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     width="200px"
+     inkscape:snap-bbox="true"
+     inkscape:window-width="1024"
+     inkscape:window-height="578"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#292eff;stroke:#000080;stroke-opacity:1;fill-opacity:1"
+       id="path3600"
+       d="m 100.11771,105.21176 c 1.19747,1.99984 2.53955,3.91198 3.58457,5.99979 0.95034,1.56898 1.97065,3.09016 2.97779,4.62348 1.31624,1.508 2.72195,2.92376 4.01369,4.4532 1.37196,1.60878 2.52329,3.39591 3.68313,5.15993 0.93567,1.52934 1.74892,3.10454 2.45135,4.7564 0.75882,1.90443 0.96003,3.94331 1.08564,5.97005 0.34873,1.7279 0.69916,3.44523 0.88478,5.20032 0.27082,1.85791 0.0441,3.66819 -0.43503,5.46573 -0.56612,1.66178 -1.49165,3.15386 -2.4386,4.61838 -1.08483,1.58978 -2.38999,3.03168 -3.95099,4.16048 -1.20364,0.9876 -2.65693,1.5725 -3.91275,2.4826 -4.94186,3.2966 -1.0305,0.754 -15.185784,6.1063 -0.26358,0.1 -0.56157,0.066 -0.83418,0.1372 -0.28532,0.075 -1.10839,0.4041 -0.83273,0.2992 13.452234,-5.1182 17.175344,-7.0162 12.253574,-4.5508 -0.26328,0.1336 -0.51478,0.2936 -0.78982,0.401 -4.871234,1.9014 -9.745094,3.7972 -14.644864,5.6238 -1.16142,0.433 -2.53113,0.2982 -3.73232,0.6192 -2.16803,0.5689 -4.41791,0.6686 -6.64623,0.771 -2.50614,-0.1762 -4.84586,-1.0585 -7.19136,-1.8813 -1.89567,-1.262 -4.18325,-1.4233 -6.26678,-2.153 -1.90519,-0.9938 -2.41352,-2.8954 -2.69304,-4.8709 -0.18521,-2.0084 -0.14206,-4.0291 -0.12842,-6.0435 0.0994,-1.50268 -10e-4,-2.94591 -0.47692,-4.37437 0,0 13.99986,-5.31311 13.99986,-5.31311 l 0,0 c 0.54895,1.58086 0.75393,3.17921 0.62389,4.85509 -0.0144,1.94741 -0.0568,3.89892 0.0808,5.84299 0.17584,1.4881 0.40185,2.8255 2.01635,3.3068 2.14434,0.5748 4.24832,1.2174 6.24035,2.2221 2.23818,0.7739 4.5418,1.4738 6.93951,1.3509 2.21684,-0.1584 4.41485,-0.4326 6.57396,-0.9783 0.94041,-0.1405 1.88694,-0.2567 2.802804,-0.5229 0.28548,-0.083 1.12181,-0.394 0.84493,-0.2856 -20.225864,7.9116 -16.848164,6.5709 -12.167014,4.7091 2.43184,-1.3097 36.777304,-14.37282 3.93345,-1.5432 -0.2267,0.088 0.45159,-0.1817 0.67739,-0.2726 1.31063,-0.8275 2.49043,-1.8225 3.95634,-2.398 1.87522,-1.5383 -0.57303,0.4022 1.42685,-0.9661 1.03774,-0.7101 1.821944,-1.8147 2.657374,-2.7299 0.94823,-1.3593 1.87666,-2.7283 2.51551,-4.26346 0.73769,-1.48362 0.84014,-3.20709 0.6726,-4.83367 -0.17212,-1.7805 -0.52936,-3.51917 -0.89216,-5.26883 -0.093,-1.8534 -0.224,-3.72887 -0.92021,-5.47164 -0.68281,-1.56099 -1.47172,-3.05542 -2.34517,-4.51751 -1.126814,-1.7142 -2.220994,-3.46641 -3.609154,-4.98605 -1.3466,-1.55214 -2.7993,-3.01256 -4.06901,-4.62884 -1.05329,-1.57587 -2.15611,-3.11912 -3.06502,-4.7858 -0.99142,-1.9949 -2.15244,-3.91751 -3.4981,-5.69208 0,0 13.829134,-5.80358 13.829134,-5.80358 z"
+       inkscape:export-filename="/home/babik/GIS/symbol/zrodlo16.png"
+       inkscape:export-xdpi="7.9016614"
+       inkscape:export-ydpi="7.9016614" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36212)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#292eff;fill-rule:evenodd;stroke:#000080;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       id="path2816"
+       sodipodi:cx="65.659912"
+       sodipodi:cy="66.659866"
+       sodipodi:rx="15.152288"
+       sodipodi:ry="15.152288"
+       d="m 80.812201,66.659866 c 0,8.368378 -6.783911,15.152289 -15.152289,15.152289 -8.368378,0 -15.152288,-6.783911 -15.152288,-15.152289 0,-8.368377 6.78391,-15.152288 15.152288,-15.152288 8.368378,0 15.152289,6.783911 15.152289,15.152288 z"
+       transform="matrix(2.5462694,0,0,2.7129361,-67.182727,744.74402)"
+       inkscape:export-filename="/home/babik/GIS/symbol/zrodlo16.png"
+       inkscape:export-xdpi="7.9016614"
+       inkscape:export-ydpi="7.9016614" />
+  </g>
+</svg>

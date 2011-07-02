@@ -1,0 +1,125 @@
+﻿<Map bgcolor="transparent" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Style name="contours10">
+        <Rule>
+                <MaxScaleDenominator>25000</MaxScaleDenominator>
+                <MinScaleDenominator>5000</MinScaleDenominator>
+                <LineSymbolizer>
+                        <CssParameter name="stroke">#b58000</CssParameter>
+                        <CssParameter name="stroke-width">0.5</CssParameter>
+                </LineSymbolizer>
+        </Rule>
+</Style>
+
+<Style name="contours20">
+        <Rule>
+                <MaxScaleDenominator>50000</MaxScaleDenominator>
+                <MinScaleDenominator>25000</MinScaleDenominator>
+                <LineSymbolizer>
+                        <CssParameter name="stroke">#b58000</CssParameter>
+                        <CssParameter name="stroke-width">0.5</CssParameter>
+                        <CssParameter name="stroke-linejoin">round</CssParameter>
+                </LineSymbolizer>
+        </Rule>
+</Style>
+
+<Style name="contours50">
+        <Rule>
+                <MaxScaleDenominator>200000</MaxScaleDenominator>
+                <MinScaleDenominator>50000</MinScaleDenominator>
+                <LineSymbolizer>
+                        <CssParameter name="stroke">#b58000</CssParameter>
+                        <CssParameter name="stroke-width">0.6</CssParameter>
+                        <CssParameter name="stroke-linejoin">round</CssParameter>
+                </LineSymbolizer>
+        </Rule>
+        <Rule>
+                <MaxScaleDenominator>25000</MaxScaleDenominator>
+                <MinScaleDenominator>5000</MinScaleDenominator>
+                <LineSymbolizer>
+                        <CssParameter name="stroke">#b58000</CssParameter>
+                        <CssParameter name="stroke-width">0.6</CssParameter>
+                        <CssParameter name="stroke-linejoin">round</CssParameter>
+                </LineSymbolizer>
+                <TextSymbolizer name="height" face_name="DejaVu Sans Book" size="8" fill="#b58000" halo_radius="1" placement="line" max_char_angle_delta="40" />
+        </Rule>
+</Style>
+<Style name="contours100">
+        <Rule>
+                <MaxScaleDenominator>200000</MaxScaleDenominator>
+                <MinScaleDenominator>50000</MinScaleDenominator>
+                <LineSymbolizer>
+                        <CssParameter name="stroke">#b58000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                        <CssParameter name="stroke-linejoin">round</CssParameter>
+                </LineSymbolizer>
+                <TextSymbolizer name="height" face_name="DejaVu Sans Book" size="8" fill="#b58000" halo_radius="1" placement="line" max_char_angle_delta="40" />
+        </Rule>
+        <Rule>
+                <MaxScaleDenominator>50000</MaxScaleDenominator>
+                <MinScaleDenominator>5000</MinScaleDenominator>
+                <LineSymbolizer>
+                        <CssParameter name="stroke">#b58000</CssParameter>
+                        <CssParameter name="stroke-width">1.2</CssParameter>
+                        <CssParameter name="stroke-linejoin">round</CssParameter>
+                </LineSymbolizer>
+                <TextSymbolizer name="height" face_name="DejaVu Sans Book" size="8" fill="#b58000" halo_radius="1" placement="line" max_char_angle_delta="40" />
+        </Rule>
+</Style>
+
+
+<Layer name="contours_10" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+    <StyleName>contours10</StyleName>
+    <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">(select the_geom,height from contour WHERE height::integer % 10 = 0 AND height::integer % 50 != 0 AND height::integer % 100 != 0) as "contours-10"</Parameter>
+<Parameter name="geometry_field">the_geom</Parameter>
+    </Datasource>
+  </Layer>   
+  
+  <Layer name="contours_20" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+    <StyleName>contours20</StyleName>
+    <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">(select the_geom,height from contour WHERE height::integer % 20 = 0 AND height::integer % 100 != 0) as "contours-20"</Parameter>
+<Parameter name="geometry_field">the_geom</Parameter>
+    </Datasource>
+  </Layer>   
+  
+<Layer name="contours_50" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+    <StyleName>contours50</StyleName>
+    <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">(select the_geom,height from contour WHERE height::integer % 50 = 0 AND height::integer % 100 != 0) as "contours-50"</Parameter>
+<Parameter name="geometry_field">the_geom</Parameter>
+    </Datasource>
+  </Layer>   
+  
+  <Layer name="contours_100" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+    <StyleName>contours100</StyleName>
+    <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">(select the_geom,height from contour WHERE height::integer % 100 = 0) as "contours-100"</Parameter>
+<Parameter name="geometry_field">the_geom</Parameter>
+    </Datasource>
+  </Layer>   
+</Map>

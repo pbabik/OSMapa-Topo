@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg3588"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="policie.svg"
+   inkscape:export-filename="/home/babik/GIS/symbol/policie.png"
+   inkscape:export-xdpi="23.491028"
+   inkscape:export-ydpi="23.491028">
+  <defs
+     id="defs3590" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.5"
+     inkscape:cx="32"
+     inkscape:cy="34.833455"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1024"
+     inkscape:window-height="578"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3593">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <rect
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:0.23305868;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3958"
+       width="59.145237"
+       height="57.228115"
+       x="2.5677619"
+       y="2.9313982"
+       ry="26.8696"
+       rx="11.537513" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3.26040792;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:3.9000001;stroke-opacity:1"
+       d="m 39.51111,18.853581 14.590441,0.02365 -6.243178,10.721948 8.842675,7.493946 -10.942387,4.487047 -2.755352,10.143706 -11.064816,-5.975005 -10.946517,6.003359 -2.716805,-10.057174 -11.033147,-4.538219 8.676039,-7.602916 -5.80865,-10.625596 14.149508,-0.01107 7.665571,-8.124008 7.586618,8.060251 z"
+       id="path3187"
+       sodipodi:nodetypes="ccccccccccccccc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 32.944027,23.672362 c -3.624079,3.238496 -7.334793,4.271807 -11.253689,0 0,0 -1.481626,7.921368 0,10.958728 1.801994,3.694115 11.098823,9.424488 11.098823,9.424488 0,0 9.507307,-6.100229 11.150442,-9.46832 1.643133,-3.368086 9.75e-4,-10.914079 9.75e-4,-10.914079 -2.918887,2.624717 -6.037691,4.550512 -10.996551,-8.17e-4 z"
+       id="path3193-6"
+       sodipodi:nodetypes="ccsczcc"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
