@@ -1671,43 +1671,88 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Style name="nazwy_drog">
 
-<!-- nazwy ulic, cieków wodnych itp. obiektów z tabeli planet_osm_line + tabliczki z numerami dróg primary/secondary -->
+<!-- nazwy ulic i cieków wodnych - kolumny waterway i highway + tabliczki z numerami dróg primary/secondary -->
 <Rule>
-<MaxScaleDenominator>20000</MaxScaleDenominator>
+<MinScaleDenominator>100000</MinScaleDenominator>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' and not [length] &gt; 3</Filter>     
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30"/>  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" dy="2"/>
+    </Rule>
+
+<Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>     
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30"/>  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" dy="2"/>
     </Rule>
 
-<Rule>
-<MaxScaleDenominator>20000</MaxScaleDenominator>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>   
-<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" dy="2"/> 
-    </Rule>
-
   <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt;3 </Filter>   
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="50" dy="2"/>
+    </Rule>
+    
+      <Rule>
+<MinScaleDenominator>100000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7 </Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="50" dy="2"/>
+    </Rule>
+
+      <Rule>
+<MinScaleDenominator>100000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7 </Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt; 3</Filter>   
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="20" vertical_alignment="middle" unlock_image="true"/>
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+    
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+    
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt; 3</Filter>   
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" dy="4"/>
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+    
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt;7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+  <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750" />
     </Rule>
 
   <Rule>
@@ -1719,24 +1764,70 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
  <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary' or [highway] = 'secondary_link' </Filter>   
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="50"/>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+ <Rule>
+<MinScaleDenominator>200000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw2.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+ <Rule>
+<MinScaleDenominator>200000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary' or [highway] = 'secondary_link' </Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>   
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="50" />  
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="10"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="50" />  
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw2.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="50" />  
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary' or [highway] = 'secondary_link' </Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>   
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
-     <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="30"/>
+     <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+     <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw2.png" type="png" min_distance="30"/>
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+     <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw3.png" type="png" min_distance="30"/>
     </Rule>
 
 <Rule>
@@ -2342,8 +2433,8 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 </Style>
 
-<Style name="punkty">
-<!-- POI, miasta... wszystko z tabeli planet_osm_point -->
+<Style name="nazwy_miejsc">
+<!--Od stolycy do przysiółka. Tylko obiekty z kolumny "place" -->
     <Rule>
       <Filter>[place] = 'province'</Filter>
       <MinScaleDenominator>1000000</MinScaleDenominator>
@@ -2426,6 +2517,10 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1" wrap_width="0"/>
     </Rule>
+    </Style>
+    
+    <Style name="punkty">
+    <!-- POI wszelkiego rodzaju -->
     <Rule>
       <Filter>[amenity] = 'pub' or [amenity] = 'bar' </Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
@@ -2721,18 +2816,18 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol12.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol12.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol16.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol16.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol20.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol20.png" type="png" allow_overlap="true"/>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
 </Rule>
 
@@ -3033,9 +3128,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[amenity]='parking'</Filter>
 <PointSymbolizer file="symbol/parking16.png" type="png"/>
 </Rule>
-
-
-
   </Style>
 
 <Style name="punkty_na_poligonach">
@@ -3239,24 +3331,24 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol12.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol12.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol16.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol16.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol20.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol20.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 <Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol20.png" type="png"/>
+<PointSymbolizer file="symbol/kosciol20.png" type="png" allow_overlap="true"/>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
 </Rule>
 
@@ -3655,9 +3747,24 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="port">5432</Parameter>
 <Parameter name="user">postgres</Parameter>
 <Parameter name="password">geo</Parameter>
-<Parameter name="table">planet_osm_line</Parameter>
+<Parameter name="table">(select way, highway, waterway, name, ref, char_length(ref) as length FROM planet_osm_line WHERE highway is not null OR waterway is not null) as "nazwy_drog"</Parameter> 
+<Parameter name="geometry_field">way</Parameter>
+</Datasource>
+</Layer>
+
+<Layer name="nazwy_miejsc" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+    <StyleName>nazwy_miejsc</StyleName>
+    <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">(select way, name, population, place, capital, admin_level from planet_osm_point where place is not null) as "miejsca"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer> 
+
 
 </Map>

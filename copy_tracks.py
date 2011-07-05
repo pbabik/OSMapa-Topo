@@ -31,7 +31,7 @@ for opt, val in opts:
         assert False, "unhandled option"
 
 # Create connection to DB server.
-connection = connect("dbname='%s' host='localhost' port='5432' user='postgres' password='password' " % (db_name));
+connection = connect("dbname='%s' host='localhost' port='5432' user='postgres' password='geo' " % (db_name));
 cursor = connection.cursor()
 relation_cursor = connection.cursor()
 
