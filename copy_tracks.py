@@ -146,17 +146,17 @@ cursor.execute("CREATE TEMPORARY TABLE tmp_planet_osm_track AS \
         WHEN marked_trail = 'black' AND route='bicycle' THEN 'bicycle' \
         WHEN \"osmc:symbol\" IS NOT NULL THEN \
           CASE \"osmc:symbol\" \
-            WHEN 'blue:white:black_bar' THEN 'yes' \
-            WHEN 'blue:white:black_circle' THEN 'yes' \
-            WHEN 'blue:white:black_corner' THEN 'yes' \
-            WHEN 'blue:white:black_backslash' THEN 'learning' \
-            WHEN 'blue:white:black_L' THEN 'ruin' \
-            WHEN 'blue:white:black_triangle' THEN 'peak' \
-            WHEN 'blue:white:black_bowl' THEN 'spring' \
-            WHEN 'blue:white:black_turned_T' THEN 'interesting_object' \
-            WHEN 'blue:white:black_dot' THEN 'horse' \
-            WHEN 'blue:orange:black_bar' THEN 'bicycle' \
-            WHEN 'blue:yellow:black_bar' THEN 'ski' \
+            WHEN 'black:white:black_bar' THEN 'yes' \
+            WHEN 'black:white:black_circle' THEN 'yes' \
+            WHEN 'black:white:black_corner' THEN 'yes' \
+            WHEN 'black:white:black_backslash' THEN 'learning' \
+            WHEN 'black:white:black_L' THEN 'ruin' \
+            WHEN 'black:white:black_triangle' THEN 'peak' \
+            WHEN 'black:white:black_bowl' THEN 'spring' \
+            WHEN 'black:white:black_turned_T' THEN 'interesting_object' \
+            WHEN 'black:white:black_dot' THEN 'horse' \
+            WHEN 'black:orange:black_bar' THEN 'bicycle' \
+            WHEN 'black:yellow:black_bar' THEN 'ski' \
         END \
         WHEN (colour = 'black' OR colour='#000000') AND NOT route = 'bicycle' THEN 'yes' \
         WHEN (colour = 'black' OR colour='#000000') AND route = 'bicycle' THEN 'bicycle' \
