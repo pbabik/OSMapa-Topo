@@ -167,7 +167,7 @@ cursor.execute("CREATE TEMPORARY TABLE tmp_planet_osm_track AS \
       marked_trail_yellow, \"osmc:symbol\", colour) IS NOT NULL) OR \
       ((route='foot' OR route='hiking' OR route='horse' OR route='ski' OR route='bicycle') AND \
       (network IN ('e-road', 'iwn', 'rwn', 'icn','ncn', 'rcn', 'lcn')))) AS t \
-  WHERE (COALESCE(t.kct_yellow, t.kct_red, t.kct_green, t.kct_blue) IS NOT \
+  WHERE (COALESCE(t.kct_yellow, t.kct_red, t.kct_green, t.kct_blue, t.kct_black) IS NOT \
     NULL) OR ((route='foot' OR route='hiking' OR route='horse' OR route='ski' OR route='bicycle') \
     AND (network IN ('e-road', 'iwn', 'rwn', 'icn','ncn', 'rcn', 'lcn'))))")
 
