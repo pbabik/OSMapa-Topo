@@ -10,16 +10,16 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
-   width="555.875"
+   width="1140"
    height="268.40625"
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.48.1 r9760"
    sodipodi:docname="krajowa.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="/home/mechanik/symbol/dk.png"
-   inkscape:export-xdpi="2.8723404"
-   inkscape:export-ydpi="2.8723404">
+   inkscape:export-filename="/home/mechanik/OSMapa-Topo/symbol/dk.png"
+   inkscape:export-xdpi="3.0178134"
+   inkscape:export-ydpi="3.0178134">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -31,7 +31,7 @@
         <cc:license
            rdf:resource="http://web.resource.org/cc/PublicDomain" />
         <dc:language>en</dc:language>
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -119,15 +119,15 @@
        sodipodi:type="inkscape:persp3d" />
   </defs>
   <rect
-     style="fill:#eb1515;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:#eb1515;fill-opacity:1;stroke:#ffffff;stroke-width:2.86109996;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="rect3896"
-     width="553.86182"
-     height="266.40826"
-     x="1.0060372"
-     y="1.0104237"
-     ry="99.086105"
+     width="1137.1389"
+     height="265.54715"
+     x="1.4365872"
+     y="1.4409736"
+     ry="98.765831"
      inkscape:export-filename="/home/babik/GIS/symbol/dk.png"
      inkscape:export-xdpi="3.9145632"
      inkscape:export-ydpi="3.9145632"
-     rx="109.06163" />
+     rx="121.46952" />
 </svg>

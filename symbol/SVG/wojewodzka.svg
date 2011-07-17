@@ -10,14 +10,14 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
-   width="569.46875"
-   height="321.875"
+   width="568.34375"
+   height="281.78125"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.0 r9654"
+   inkscape:version="0.48.1 r9760"
    sodipodi:docname="wojewodzka.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="/home/mechanik/symbol/dw_duza.png"
+   inkscape:export-filename="/home/mechanik/OSMapa-Topo/symbol/dw.png"
    inkscape:export-xdpi="3.8327603"
    inkscape:export-ydpi="3.8327603">
   <metadata
@@ -49,8 +49,8 @@
      id="base"
      showgrid="false"
      inkscape:zoom="0.46853985"
-     inkscape:cx="282.32991"
-     inkscape:cy="306.79252"
+     inkscape:cx="286.04866"
+     inkscape:cy="282.79252"
      inkscape:window-x="1"
      inkscape:window-y="1"
      inkscape:current-layer="svg2"
@@ -63,7 +63,7 @@
      fit-margin-bottom="0">
     <sodipodi:guide
        orientation="0.70710678,0.70710678"
-       position="-342.46579,-102.74819"
+       position="-338.74704,-126.74819"
        id="guide3800" />
   </sodipodi:namedview>
   <defs
@@ -123,8 +123,8 @@
      id="rect3896"
      width="552.78101"
      height="266.21051"
-     x="4.0684137"
-     y="23.864574"
+     x="7.7871637"
+     y="7.7708244"
      ry="113.90466"
      rx="106.71451" />
 </svg>
