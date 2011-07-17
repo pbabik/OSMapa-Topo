@@ -2065,7 +2065,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.5</CssParameter>
       </LineSymbolizer>
     </Rule>
-    
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>10000</MinScaleDenominator>
@@ -2075,9 +2074,21 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>10000</MinScaleDenominator>
-    <Filter>[building]='yes' and [way_area] &gt;= 400</Filter>
+    <Filter>([building]='yes' and [way_area] &gt;= 400) and not ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
     <PolygonSymbolizer>
   <CssParameter name="fill">#989898</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+     <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>10000</MinScaleDenominator>
+    <Filter>([building]='yes' and [way_area] &gt;= 400) and ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#7c97ae</CssParameter>
   </PolygonSymbolizer>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
@@ -2087,7 +2098,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>[building]='yes' </Filter>
+    <Filter>[building]='yes' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
     <PolygonSymbolizer>
   <CssParameter name="fill">#BBBBBB</CssParameter>
   </PolygonSymbolizer>
@@ -2097,15 +2108,36 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       </LineSymbolizer>
     </Rule>
     <Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>[building]='yes' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#7c97ae</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>    
-<Filter>[building]='yes'</Filter>
+<Filter>[building]='yes' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
       <BuildingSymbolizer>
         <CssParameter name="fill">#BBBBBB</CssParameter>
         <CssParameter name="fill-opacity">0.75</CssParameter>
         <CssParameter name="height">8</CssParameter>
       </BuildingSymbolizer>    
     </Rule>
-  
+    <Rule>
+<MaxScaleDenominator>5000</MaxScaleDenominator>    
+<Filter>[building]='yes' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+      <BuildingSymbolizer>
+        <CssParameter name="fill">#7c97ae</CssParameter>
+        <CssParameter name="fill-opacity">0.75</CssParameter>
+        <CssParameter name="height">8</CssParameter>
+      </BuildingSymbolizer>    
+    </Rule>
+
 <Rule>
 <Filter>[landuse] = 'industrial' or [landuse] = 'railway'</Filter>
       <PolygonSymbolizer>
@@ -2497,6 +2529,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />    
   </Rule>
 
+  <Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[tourism]='attraction'</Filter>  
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
+  </Rule>
 
 </Style>
 
@@ -2759,6 +2796,12 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/punktwid16.png" type="png"></PointSymbolizer>
     </Rule>    
+    
+  <Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[tourism]='attraction'</Filter>  
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
+  </Rule>
     
           <Rule>
       <Filter> [amenity] = 'fire_station'</Filter>

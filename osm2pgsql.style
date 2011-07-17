@@ -39,6 +39,7 @@ node	     capital      text         linear
 node,way   construction text         linear
 node,way   disused      text         linear
 node       ele          text         linear
+node,way   heritiage     text         polygon
 node,way   highway      text         linear
 node,way   historic     text         polygon
 node,way	information	text	polygon
