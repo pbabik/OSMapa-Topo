@@ -2260,9 +2260,76 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </LineSymbolizer>
 <PointSymbolizer file="symbol/klm18.png" type="png"></PointSymbolizer>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000000" halo_radius="1"  placement="point" dy="12" />
-      
-
 </Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[highway]='motorway' or [highway]='motorway_link'</Filter>
+<PolygonSymbolizer>
+<CssParameter name="fill">#f38730</CssParameter>
+</PolygonSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">0.5</CssParameter>
+</LineSymbolizer>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[highway]='primary' or [highway]='trunk' or [highway]='primary_link' or [highway]='trunk_link'</Filter>
+<PolygonSymbolizer>
+<CssParameter name="fill">#f38730</CssParameter>
+</PolygonSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">0.5</CssParameter>
+</LineSymbolizer>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[highway]='secondary' or [highway]='secondary_link'</Filter>
+<PolygonSymbolizer>
+<CssParameter name="fill">#f3ba30</CssParameter>
+</PolygonSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">0.5</CssParameter>
+</LineSymbolizer>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[highway]='tertiary'</Filter>
+<PolygonSymbolizer>
+<CssParameter name="fill">#FDFD83</CssParameter>
+</PolygonSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">0.5</CssParameter>
+</LineSymbolizer>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[highway]='residential' or [highway]='unclassified' or [highway]='minor' or [highway]='road'</Filter>
+<PolygonSymbolizer>
+<CssParameter name="fill">#FFFFFF</CssParameter>
+</PolygonSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">0.5</CssParameter>
+</LineSymbolizer>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[highway]='living_street' or [highway]='pedestrian'</Filter>
+<PolygonSymbolizer>
+<CssParameter name="fill">#ddd</CssParameter>
+</PolygonSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">0.5</CssParameter>
+</LineSymbolizer>
+</Rule>
+
+
+
 </Style>
 
 <Style name="zbiorniki_wodne">
