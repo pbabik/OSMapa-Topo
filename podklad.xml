@@ -600,7 +600,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
    <MaxScaleDenominator>100000</MaxScaleDenominator>
    <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
      <LineSymbolizer>
         <CssParameter name="stroke">grey</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -611,7 +611,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
 	    <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -622,7 +622,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
 	    <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -632,7 +632,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-<Filter>[highway] = 'living_street'</Filter>   
+<Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
 <LineSymbolizer>
 <CssParameter name="stroke">#000000</CssParameter>
   <CssParameter name="stroke-width">6</CssParameter>
