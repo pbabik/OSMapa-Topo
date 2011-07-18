@@ -1674,30 +1674,31 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <!-- nazwy ulic i cieków wodnych - kolumny waterway i highway + tabliczki z numerami dróg primary/secondary -->
 <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' and not [length] &gt; 3</Filter>     
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30"/>  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" dy="2"/>
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="50" spacing="750"/>
     </Rule>
 
 <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>     
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30"/>  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" dy="2"/>
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="50" spacing="750"/>
     </Rule>
 
   <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
       <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt;3 </Filter>   
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="50" dy="2"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="50" spacing="750"/>
     </Rule>
     
       <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
       <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7 </Filter>   
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="50" dy="2"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="50" spacing="750"/>
     </Rule>
 
       <Rule>
