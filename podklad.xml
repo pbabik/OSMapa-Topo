@@ -2165,7 +2165,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 
 <Rule>
-<Filter>([landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard') and not [religion]&gt;'' or [religion]='christian'</Filter>
+<Filter>([landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard') and not ([religion]&gt;'' or [religion]='christian')</Filter>
  <PolygonPatternSymbolizer  type="png" file="symbol/cm.png"/>
       <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
