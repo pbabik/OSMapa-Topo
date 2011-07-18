@@ -3772,7 +3772,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="port">5432</Parameter>
 <Parameter name="user">postgres</Parameter>
 <Parameter name="password">geo</Parameter>
-<Parameter name="table">(select way,highway,name,ref,oneway,bridge,tunnel,surface from planet_osm_line WHERE highway='tertiary') as "drogi_powiatowe"</Parameter>
+<Parameter name="table">(select way,highway,name,ref,oneway,bridge,tunnel,surface from planet_osm_line WHERE highway='tertiary' OR highway='tertiary_link') as "drogi_powiatowe"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer>
@@ -3786,7 +3786,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="port">5432</Parameter>
 <Parameter name="user">postgres</Parameter>
 <Parameter name="password">geo</Parameter>
-<Parameter name="table">(select way,highway,name,ref,oneway,bridge,tunnel,surface from planet_osm_line WHERE highway ='secondary') as "drogi_wojewodzkie"</Parameter>
+<Parameter name="table">(select way,highway,name,ref,oneway,bridge,tunnel,surface from planet_osm_line WHERE highway ='secondary' OR highway='secondary_link') as "drogi_wojewodzkie"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer>
