@@ -1303,7 +1303,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>500000</MaxScaleDenominator>
       <Filter>[highway] = 'motorway'</Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>   
@@ -1314,7 +1314,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[highway] = 'motorway'</Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>   
@@ -1325,7 +1325,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MinScaleDenominator>25000</MinScaleDenominator>
       <Filter>[highway] = 'motorway'  and not [tunnel]&gt;='' </Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>   
@@ -1335,7 +1335,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
       <Filter>[highway] = 'motorway' and not [tunnel]&gt;=''</Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">8</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>  
@@ -1426,7 +1426,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[highway] = 'motorway_link'</Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>   
@@ -1437,7 +1437,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MinScaleDenominator>25000</MinScaleDenominator>
       <Filter>[highway] = 'motorway_link'  and not [tunnel]&gt;='' </Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>   
@@ -1447,7 +1447,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
       <Filter>[highway] = 'motorway_link' and not [tunnel]&gt;=''</Filter>   
       <LineSymbolizer>
-        <CssParameter name="stroke">#506077</CssParameter>
+        <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">7</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>  
@@ -2554,7 +2554,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[highway]='motorway' or [highway]='motorway_link'</Filter>
 <PolygonSymbolizer>
-<CssParameter name="fill">#f38730</CssParameter>
+<CssParameter name="fill">#809bc0</CssParameter>
 </PolygonSymbolizer>
 <LineSymbolizer>
 <CssParameter name="stroke">#000000</CssParameter>
