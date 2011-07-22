@@ -1928,21 +1928,80 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Style name="nazwy_drog">
 
 <!-- nazwy ulic i cieków wodnych - kolumny waterway i highway + tabliczki z numerami dróg primary/secondary -->
-<Rule>
+  <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' and not [length] &gt; 3</Filter>     
-<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30"/>  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="75" spacing="1000"/>
+      <Filter>[highway]='motorway' and not [length] &gt;3 </Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="75" spacing="1000"/>
+    </Rule>
+    
+      <Rule>
+<MinScaleDenominator>100000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
+      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt; 7 </Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="75" spacing="1000"/>
+    </Rule>
+
+      <Rule>
+<MinScaleDenominator>100000</MinScaleDenominator>
+<MaxScaleDenominator>500000</MaxScaleDenominator>
+      <Filter>[highway]='motorway' and [length] &gt; 7 </Filter>   
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
 
 <Rule>
-<MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>     
-<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30"/>  
-<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="75" spacing="1000"/>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>[highway]='motorway' and not [length] &gt; 3</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+    
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+    
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>[highway]='motorway' and [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
 
+  <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>[highway]='motorway' and not [length] &gt; 3</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+    
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt;7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
+    </Rule>
+
+  <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>[highway] = 'motorway' and [length] &gt; 7</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+<ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750" />
+    </Rule>
+
+  <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>[highway] = 'motorway'</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+    </Rule>
   <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
@@ -3957,7 +4016,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <!-- pamiętaj, by wstawić własne: układ współrzędnych, host (jeśli korzystasz z bazy gdzieś-w-sieci), nazwę użytkownika i hasło -->
 
 
-<Layer name="pokrycie_terenu" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="pokrycie_terenu">
     <StyleName>pokrycie_terenu</StyleName>
         <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -3971,7 +4030,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>
   
-<Layer name="cieki" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="cieki">
     <StyleName>cieki</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -3985,7 +4044,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>   
   
-  <Layer name="zbiorniki_wodne" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+  <Layer name="zbiorniki_wodne">
     <StyleName>zbiorniki_wodne</StyleName>
         <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -3999,7 +4058,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>
 
-  <Layer name="linie_dol" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+  <Layer name="linie_dol">
     <StyleName>linie_dol</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4013,7 +4072,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer> 
   
-  <Layer name="sciezki" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+  <Layer name="sciezki">
     <StyleName>sciezki</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4029,7 +4088,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   
  
   
-  <Layer name="koleje" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+  <Layer name="koleje">
     <StyleName>koleje</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4043,7 +4102,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>   
   
-<Layer name="zjazdy" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="zjazdy">
     <StyleName>zjazdy</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4057,7 +4116,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer > 
   
-<Layer name="drogi_lokalne" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="drogi_lokalne">
     <StyleName>drogi_lokalne</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4071,7 +4130,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>
 
-<Layer name="drogi_powiatowe" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="drogi_powiatowe">
     <StyleName>drogi_powiatowe</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4085,7 +4144,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>
 
-<Layer name="drogi_wojewodzkie" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="drogi_wojewodzkie">
     <StyleName>drogi_wojewodzkie</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4099,7 +4158,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>
 
-<Layer name="drogi_glowne" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="drogi_glowne">
     <StyleName>drogi_glowne</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4114,7 +4173,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   </Layer> 
   
   
-<Layer name="punkty" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="punkty">
     <StyleName>punkty</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4128,7 +4187,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer> 
   
-  <Layer name="punkty_na_poligonach" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+  <Layer name="punkty_na_poligonach">
     <StyleName>punkty_na_poligonach</StyleName>
         <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4142,7 +4201,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer>
 
-<Layer name="nazwy_poligonow" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="nazwy_poligonow">
     <StyleName>nazwy_poligonow</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4156,7 +4215,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer> 
 
-<Layer name="nazwy_drog" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Layer name="nazwy_drog">
     <StyleName>nazwy_drog</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
@@ -4170,7 +4229,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Datasource>
 </Layer>
 
-<Layer name="nazwy_miejsc" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs" clear_label_cache="on">
+<Layer name="nazwy_miejsc"  clear_label_cache="on">
     <StyleName>nazwy_miejsc</StyleName>
     <Datasource>
       <Parameter name="type">postgis</Parameter>
