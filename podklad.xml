@@ -2339,7 +2339,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       </LineSymbolizer>
     </Rule>
 <Rule>
-<MaxScaleDenominator>150000</MaxScaleDenominator>
+<MaxScaleDenominator>250000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
 <Filter>[landuse] = 'residential' or [landuse] = 'retail' or [landuse] = 'commercial'</Filter>
       <PolygonSymbolizer>
