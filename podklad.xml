@@ -2537,8 +2537,8 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 </Style>
 
-<Style name="pokrycie_terenu">
-<!-- lasy, zabudowa, tereny przemysłowe i parę innych. dozwolone wszystko z tabeli planet_osm_polygon -->
+<Style name="pokrycie_terenu_dol">
+<!-- lasy, zabudowa, tereny przemysłowe, wojskowe i kolejowe, pola uprawne, łąki, zarośla -->
  <Rule>
  <MinScaleDenominator>1000000</MinScaleDenominator>
 <Filter>([landuse] = 'forest' or [natural] = 'wood' or [landuse] = 'wood') and [way_area] &gt;= 5000000</Filter>
@@ -2639,103 +2639,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.5</CssParameter>
       </LineSymbolizer>
     </Rule>
-    
-    <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>[building] &gt; ''</Filter>
-    <PointSymbolizer file="symbol/budynek100.png" type="png" />
-    </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and [way_area] &lt;= 600</Filter>
-    <PointSymbolizer file="symbol/budynek50.png" width="4" height="4" type="png" />
-    </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and [way_area] &gt;= 600</Filter>
-    <PolygonSymbolizer>
-  <CssParameter name="fill">#989898</CssParameter>
-  </PolygonSymbolizer>
-       <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">0.5</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>10000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and [way_area] &lt;= 400</Filter>
-  <PointSymbolizer file="symbol/budynek50.png" width="4" height="4" type="png" />
-    </Rule>
-    <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>10000</MinScaleDenominator>
-    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and not ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
-    <PolygonSymbolizer>
-  <CssParameter name="fill">#989898</CssParameter>
-  </PolygonSymbolizer>
-       <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">0.5</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-     <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>10000</MinScaleDenominator>
-    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
-    <PolygonSymbolizer>
-  <CssParameter name="fill">#7c97ae</CssParameter>
-  </PolygonSymbolizer>
-       <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">0.5</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-        <Rule>
-    <MaxScaleDenominator>10000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
-    <PolygonSymbolizer>
-  <CssParameter name="fill">#BBBBBB</CssParameter>
-  </PolygonSymbolizer>
-       <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">0.5</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-    <Rule>
-    <MaxScaleDenominator>10000</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
-    <PolygonSymbolizer>
-  <CssParameter name="fill">#7c97ae</CssParameter>
-  </PolygonSymbolizer>
-       <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">0.5</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-    <Rule>
-<MaxScaleDenominator>5000</MaxScaleDenominator>    
-<Filter>[building] &gt; '' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
-      <BuildingSymbolizer>
-        <CssParameter name="fill">#BBBBBB</CssParameter>
-        <CssParameter name="fill-opacity">0.75</CssParameter>
-        <CssParameter name="height">8</CssParameter>
-      </BuildingSymbolizer>    
-    </Rule>
-    <Rule>
-<MaxScaleDenominator>5000</MaxScaleDenominator>    
-<Filter>[building] &gt; '' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
-      <BuildingSymbolizer>
-        <CssParameter name="fill">#7c97ae</CssParameter>
-        <CssParameter name="fill-opacity">0.75</CssParameter>
-        <CssParameter name="height">8</CssParameter>
-      </BuildingSymbolizer>    
-    </Rule>
 
 <Rule>
 <MaxScaleDenominator>250000</MaxScaleDenominator>
@@ -2749,6 +2652,27 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
     </Rule>
+    
+    <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<Filter>[landuse] = 'farm' or [landuse]='farmland'</Filter>
+      <PolygonSymbolizer>
+        <CssParameter name="fill">#ac784e</CssParameter>
+                <CssParameter name="fill-opacity">0.5</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<Filter>[landuse] = 'meadow' or [landuse] = 'grass' or [natural] = 'fell'</Filter>
+<PolygonPatternSymbolizer file="symbol/trawa.png" type="png"/>
+    </Rule>
+    
+  <Rule>
+  <MaxScaleDenominator>250000</MaxScaleDenominator>
+<Filter>[natural] = 'sand' or [natural] = 'beach'</Filter>
+<PolygonPatternSymbolizer file="symbol/piach.png" type="png"/>
+  </Rule>
 
 <Rule>
 <MaxScaleDenominator>250000</MaxScaleDenominator>
@@ -2762,8 +2686,21 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
     </Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[natural] = 'scrub'</Filter>
+<PolygonPatternSymbolizer file="symbol/krzaki.png" type="png"/>
+    </Rule>
+    
+  <Rule>
+<Filter>[natural] = 'scree'</Filter>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<PolygonPatternSymbolizer file="symbol/kamienie.png" type="png"/>
+    </Rule>
+</Style>
 
-
+<Style name="pokrycie_terenu_gora">
+<!--cmentarze, parki, kamieniołomy, obiekty sportowe, ogródki działkowe, śmietniska, bagna +place i drogi reprezentowane powierzchniowo -->
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <Filter>([landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard' and not [religion]&gt;'') or (([landuse]='cemetery' or [amenity]='grave_yard') and [religion]='christian')</Filter>
@@ -2829,45 +2766,12 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
     </Rule>
-
-<Rule>
-<MaxScaleDenominator>100000</MaxScaleDenominator>
-<Filter>[landuse] = 'farm' or [landuse]='farmland'</Filter>
-      <PolygonSymbolizer>
-        <CssParameter name="fill">#ac784e</CssParameter>
-                <CssParameter name="fill-opacity">0.5</CssParameter>
-      </PolygonSymbolizer>
-    </Rule>
-
-<Rule>
-<MaxScaleDenominator>100000</MaxScaleDenominator>
-<Filter>[landuse] = 'meadow' or [landuse] = 'grass' or [natural] = 'fell'</Filter>
-<PolygonPatternSymbolizer file="symbol/trawa.png" type="png"/>
-    </Rule>
     
-  <Rule>
-  <MaxScaleDenominator>250000</MaxScaleDenominator>
-<Filter>[natural] = 'sand' or [natural] = 'beach'</Filter>
-<PolygonPatternSymbolizer file="symbol/piach.png" type="png"/>
-  </Rule>
 <Rule>
 <MaxScaleDenominator>250000</MaxScaleDenominator>
 <Filter>[natural] = 'wetland' or [natural]='mud'</Filter>
 <PolygonPatternSymbolizer file="symbol/bagno.png" type="png"/>
-    </Rule>    
-    
-<Rule>
-<MaxScaleDenominator>50000</MaxScaleDenominator>
-<Filter>[natural] = 'scrub'</Filter>
-<PolygonPatternSymbolizer file="symbol/krzaki.png" type="png"/>
     </Rule>
-    
-  <Rule>
-<Filter>[natural] = 'scree'</Filter>
-<MaxScaleDenominator>50000</MaxScaleDenominator>
-<PolygonPatternSymbolizer file="symbol/kamienie.png" type="png"/>
-    </Rule>
-    
     <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[landuse] = 'landfill'</Filter>
@@ -2977,9 +2881,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <CssParameter name="stroke-width">0.5</CssParameter>
 </LineSymbolizer>
 </Rule>
-
-
-
 </Style>
 
 <Style name="zbiorniki_wodne">
@@ -3026,7 +2927,105 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="fill">#88bdea</CssParameter>
       </PolygonSymbolizer>
 </Rule>
+</Style>
 
+<Style name="budynki">
+<Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>[building] &gt; ''</Filter>
+    <PointSymbolizer file="symbol/budynek100.png" type="png" />
+    </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>[building] &gt; '' and [way_area] &lt;= 600</Filter>
+    <PointSymbolizer file="symbol/budynek50.png" width="4" height="4" type="png" />
+    </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>[building] &gt; '' and [way_area] &gt;= 600</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#989898</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>10000</MinScaleDenominator>
+    <Filter>[building] &gt; '' and [way_area] &lt;= 400</Filter>
+  <PointSymbolizer file="symbol/budynek50.png" width="4" height="4" type="png" />
+    </Rule>
+    <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>10000</MinScaleDenominator>
+    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and not ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#989898</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+     <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>10000</MinScaleDenominator>
+    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#7c97ae</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+        <Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>[building] &gt; '' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#BBBBBB</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>[building] &gt; '' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+    <PolygonSymbolizer>
+  <CssParameter name="fill">#7c97ae</CssParameter>
+  </PolygonSymbolizer>
+       <LineSymbolizer>
+        <CssParameter name="stroke">#000000</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>5000</MaxScaleDenominator>    
+<Filter>[building] &gt; '' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+      <BuildingSymbolizer>
+        <CssParameter name="fill">#BBBBBB</CssParameter>
+        <CssParameter name="fill-opacity">0.75</CssParameter>
+        <CssParameter name="height">8</CssParameter>
+      </BuildingSymbolizer>    
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>5000</MaxScaleDenominator>    
+<Filter>[building] &gt; '' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+      <BuildingSymbolizer>
+        <CssParameter name="fill">#7c97ae</CssParameter>
+        <CssParameter name="fill-opacity">0.75</CssParameter>
+        <CssParameter name="height">8</CssParameter>
+      </BuildingSymbolizer>    
+    </Rule>
 </Style>
 
 <Style name="nazwy_poligonow">
@@ -3162,7 +3161,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>
 <Filter>[addr:housenumber] &gt; ''</Filter>  
-<TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>    
+<TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1" wrap_width="20"/>    
 </Rule>
 
 </Style>
@@ -3877,7 +3876,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>
 <Filter>[addr:housenumber] &gt; ''</Filter>  
-<TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>    
+<TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1" wrap_width="20"/>    
 </Rule>
   </Style>
 
@@ -4322,8 +4321,22 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <!-- pamiętaj, by wstawić własne: układ współrzędnych, host (jeśli korzystasz z bazy gdzieś-w-sieci), nazwę użytkownika i hasło -->
 
 
-<Layer name="pokrycie_terenu">
-    <StyleName>pokrycie_terenu</StyleName>
+<Layer name="pokrycie_terenu_dol">
+    <StyleName>pokrycie_terenu_dol</StyleName>
+        <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">planet_osm_polygon</Parameter>
+<Parameter name="geometry_field">way</Parameter>
+    </Datasource>
+  </Layer>
+  
+<Layer name="pokrycie_terenu_gora">
+    <StyleName>pokrycie_terenu_gora</StyleName>
         <Datasource>
       <Parameter name="type">postgis</Parameter>
       <Parameter name="dbname">gis</Parameter>
@@ -4363,6 +4376,21 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer>
+  
+  <Layer name="budynki">
+    <StyleName>budynki</StyleName>
+        <Datasource>
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="dbname">gis</Parameter>
+<Parameter name="host">localhost</Parameter>
+<Parameter name="port">5432</Parameter>
+<Parameter name="user">postgres</Parameter>
+<Parameter name="password">geo</Parameter>
+<Parameter name="table">(select * from planet_osm_polygon where building is not null) as budynki</Parameter>
+<Parameter name="geometry_field">way</Parameter>
+    </Datasource>
+  </Layer>
+
 
   <Layer name="linie_dol">
     <StyleName>linie_dol</StyleName>
@@ -4376,7 +4404,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="table">planet_osm_line</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
-  </Layer> 
+  </Layer>
   
   <Layer name="sciezki">
     <StyleName>sciezki</StyleName>
@@ -4390,9 +4418,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="table">(select * from planet_osm_line WHERE highway is not null) as "sciezki"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
-  </Layer>   
-  
- 
+  </Layer>
   
   <Layer name="koleje">
     <StyleName>koleje</StyleName>
@@ -4478,7 +4504,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Datasource>
   </Layer> 
   
-  
 <Layer name="punkty">
     <StyleName>punkty</StyleName>
     <Datasource>
@@ -4506,7 +4531,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer>
-
+  
 <Layer name="nazwy_poligonow">
     <StyleName>nazwy_poligonow</StyleName>
     <Datasource>
