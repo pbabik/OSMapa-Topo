@@ -2476,7 +2476,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <Filter>[highway] = 'living_street'</Filter>   
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
-    
+<Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+      <Filter>[highway] = 'track' or [highway]='path'</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+    </Rule>
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
       <Filter>[highway] = 'construction'</Filter>   
