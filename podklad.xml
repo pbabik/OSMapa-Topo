@@ -2736,7 +2736,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
-<Filter>[leisure] = 'park'</Filter>
+<Filter>[leisure] = 'park' or [landuse]='village_green' or [landuse]='recreation_ground'</Filter>
       <PolygonSymbolizer>
         <CssParameter name="fill">#93e577</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
@@ -3063,7 +3063,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[landuse] = 'reservoir' or [natural] = 'water' or [landuse] = 'basin' or [natural] = 'lake'</Filter>
       <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="9" fill="#0000FF" halo_radius="1"  placement="point" />
     </Rule>
-    
+            <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<Filter>[natural]='wetland' or [natural]='mud'</Filter>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="9" fill="#0000FF" halo_radius="1"  placement="point" />
+    </Rule>
      <Rule>
  <MaxScaleDenominator>100000</MaxScaleDenominator>
  <MinScaleDenominator>50000</MinScaleDenominator>
@@ -3124,13 +3128,13 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>    
-<Filter>[landuse]='industrial'</Filter>
+<Filter>[landuse]='industrial' or [landuse]='military'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />    
   </Rule>
   
     <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>    
-<Filter>[leisure]='park'</Filter>
+<Filter>[leisure]='park' or [landuse]='village_green' or [landuse]='recreation_ground'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#000000" halo_radius="1"  placement="point" />    
   </Rule>
   
@@ -3140,23 +3144,24 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#000000" halo_radius="1"  placement="point" />    
   </Rule>
   
-       <Rule>
+<Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>    
 <Filter>[landuse]='cemetery' or [amenity]='grave_yard'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />    
   </Rule>
   
-  <Rule>
+<Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>    
-<Filter>[landuse]='grass' or [landuse]='meadow' or [natural]='fell'</Filter>
-<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />    
-  </Rule>
+<Filter>[landuse]='grass' or [landuse]='meadow' or [natural]='fell' or [landuse]='sand' or [landuse]='scree' or [landuse]='landfill' or [landuse]='allotments' or [landuse]='scrub'</Filter>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />
+</Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[tourism]='attraction'</Filter>  
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
 </Rule>
+
 
 <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>
