@@ -3146,12 +3146,24 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[landuse]='cemetery' or [amenity]='grave_yard'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />    
   </Rule>
-
+  
   <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>    
+<Filter>[landuse]='grass' or [landuse]='meadow' or [natural]='fell'</Filter>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1"  placement="point" />    
+  </Rule>
+
+<Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[tourism]='attraction'</Filter>  
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
-  </Rule>
+</Rule>
+
+<Rule>
+<MaxScaleDenominator>5000</MaxScaleDenominator>
+<Filter>[addr:housenumber] &gt; ''</Filter>  
+<TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>    
+</Rule>
 
 </Style>
 
@@ -3861,6 +3873,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 <Filter>[amenity]='parking'</Filter>
 <PointSymbolizer file="symbol/parking16.png" type="png"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>5000</MaxScaleDenominator>
+<Filter>[addr:housenumber] &gt; ''</Filter>  
+<TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>    
 </Rule>
   </Style>
 

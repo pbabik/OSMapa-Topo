@@ -26,6 +26,7 @@
 # OsmType  Tag          DataType     Flags
  
 node,way   admin_level  text         linear
+node,way	addr:housenumber	text	polygon
 node,way   aerialway    text         linear
 node,way	aeroway	text	polygon
 node,way   amenity      text         nocache,polygon
