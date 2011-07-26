@@ -768,6 +768,280 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 
 <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and not [construction] != ''</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#9cc</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-dasharray">4,2</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='motorway' or [construction]='motorway_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#809bc0</CssParameter>
+        <CssParameter name="stroke-width">6</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-dasharray">4,2</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='trunk' or [construction]='trunk_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F38730</CssParameter>
+        <CssParameter name="stroke-width">8.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7.5</CssParameter>
+        <CssParameter name="stroke-dasharray">4,2</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='primary' or [construction]='primary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F38730</CssParameter>
+        <CssParameter name="stroke-width">8.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7.5</CssParameter>
+        <CssParameter name="stroke-dasharray">4,2</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='secondary' or [construction]='secondary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F3BA30</CssParameter>
+        <CssParameter name="stroke-width">6.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">5.5</CssParameter>
+        <CssParameter name="stroke-dasharray">4,2</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+        <Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='tertiary' or [construction]='tertiary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F3BA30</CssParameter>
+        <CssParameter name="stroke-width">5.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">4.5</CssParameter>
+        <CssParameter name="stroke-dasharray">4,2</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and not [construction] != ''</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#9cc</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">3.5</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='motorway' or [construction]='motorway_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#809bc0</CssParameter>
+        <CssParameter name="stroke-width">8</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='trunk' or [construction]='trunk_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F38730</CssParameter>
+        <CssParameter name="stroke-width">10.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">9.5</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='primary' or [construction]='primary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F38730</CssParameter>
+        <CssParameter name="stroke-width">10.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">9.5</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='secondary' or [construction]='secondary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F3BA30</CssParameter>
+        <CssParameter name="stroke-width">8.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7.5</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='tertiary' or [construction]='tertiary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#FDFD83</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">3.5</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='residential' or [construction]='unclassified' or [construction]='living_street' or [construction]='service')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#aaa</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">3.5</CssParameter>
+        <CssParameter name="stroke-dasharray">6,4</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and not [construction] != ''</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#9cc</CssParameter>
+        <CssParameter name="stroke-width">8</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='motorway' or [construction]='motorway_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#809bc0</CssParameter>
+        <CssParameter name="stroke-width">8</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='trunk' or [construction]='trunk_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F38730</CssParameter>
+        <CssParameter name="stroke-width">12.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">10.5</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='primary' or [construction]='primary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F38730</CssParameter>
+        <CssParameter name="stroke-width">12.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">11.5</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='secondary' or [construction]='secondary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F3BA30</CssParameter>
+        <CssParameter name="stroke-width">10.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">9.5</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='tertiary' or [construction]='tertiary_link')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#F3BA30</CssParameter>
+        <CssParameter name="stroke-width">8.5</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">7.5</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'proposed' or [highway]='construction') and ([construction]='residential' or [construction]='unclassified' or [construction]='living_street' or [construction]='service')</Filter>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#aaa</CssParameter>
+        <CssParameter name="stroke-width">6</CssParameter>
+      </LineSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">white</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-dasharray">8,8</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+
+<Rule>
 <MinScaleDenominator>200000</MinScaleDenominator> 
 <Filter>[boundary]='administrative' and [admin_level]='2'</Filter>
 <LineSymbolizer>
@@ -2201,6 +2475,12 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MinScaleDenominator>10000</MinScaleDenominator>
       <Filter>[highway] = 'living_street'</Filter>   
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
+    </Rule>
+    
+  <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+      <Filter>[highway] = 'construction'</Filter>   
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
    <Rule>
