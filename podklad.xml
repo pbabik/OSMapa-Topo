@@ -3190,36 +3190,121 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
       <Filter>[place] = 'province'</Filter>
       <MinScaleDenominator>1000000</MinScaleDenominator>
+      <MaxScaleDenominator>2500000</MaxScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="9" fill="#000" dy="0" halo_radius="1" wrap_width="0"/>
     </Rule>
     <Rule>
-      <Filter>[place] = 'city'</Filter>
-      <MinScaleDenominator>500000</MinScaleDenominator>
-      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="10" fill="#000" dy="0" halo_radius="1" wrap_width="0" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+      <Filter>[place] = 'city' and [population] &gt; 100000 and [population] &lt; 200000</Filter>
+      <MinScaleDenominator>2500000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" dy="0" halo_radius="1" wrap_width="0" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
     </Rule>
     <Rule>
-      <Filter>[place] = 'city'</Filter>
-      <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <MinScaleDenominator>20000</MinScaleDenominator>
-      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="12" fill="#000" dy="0" halo_radius="1" wrap_width="0" text_convert="toupper" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+      <Filter>[place] = 'city' and [population] &gt; 200000</Filter>
+      <MinScaleDenominator>2500000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="13" fill="#000" dy="0" halo_radius="1" wrap_width="0" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W" text_convert="toupper"/>
+    </Rule>
+    
+      <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 200000</Filter>
+      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MinScaleDenominator>500000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="16" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W" text_convert="toupper"/>
+    </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 100000 and [population] &lt; 200000</Filter>
+      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MinScaleDenominator>500000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="14" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 50000 and [population] &lt; 100000</Filter>
+      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MinScaleDenominator>500000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
     </Rule>
       <Rule>
-      <Filter>[place] = 'town'</Filter>
-      <MaxScaleDenominator>2000000</MaxScaleDenominator>
+      <Filter>([place] = 'town' or [place]='city') and [population] &lt; 50000 and [population] &gt; 25000</Filter>
+      <MaxScaleDenominator>2500000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
     </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &lt; 25000</Filter>
+      <MaxScaleDenominator>2500000</MaxScaleDenominator>
+      <MinScaleDenominator>500000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
       <Rule>
-      <Filter>[place] = 'town'</Filter>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 200000</Filter>
+      <MaxScaleDenominator>500000</MaxScaleDenominator>
+      <MinScaleDenominator>250000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="18" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W" text_convert="toupper"/>
+    </Rule>
+          <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 100000 and [population] &lt; 200000</Filter>
+      <MaxScaleDenominator>500000</MaxScaleDenominator>
+      <MinScaleDenominator>250000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="16" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W" text_convert="toupper"/>
+    </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 50000 and [population] &lt; 100000</Filter>
+      <MaxScaleDenominator>500000</MaxScaleDenominator>
+      <MinScaleDenominator>250000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="14" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+        <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 25000 and [population] &lt; 50000</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>250000</MinScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
     </Rule>
     <Rule>
-      <Filter>[place] = 'town'</Filter>
+      <Filter>([place] = 'town' or [place]='city') and [population] &lt; 25000</Filter>
+      <MaxScaleDenominator>500000</MaxScaleDenominator>
+      <MinScaleDenominator>250000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+         <Rule>
+      <Filter>([place] = 'town' or [place]='city') and not [population] &gt; ''</Filter>
+      <MaxScaleDenominator>500000</MaxScaleDenominator>
+      <MinScaleDenominator>250000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 200000</Filter>
       <MaxScaleDenominator>250000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="14" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="18" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W" text_convert="toupper"/>
+    </Rule>
+      <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 100000 and [population] &lt; 200000</Filter>
+      <MaxScaleDenominator>250000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="16" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 50000 and [population] &lt; 100000</Filter>
+      <MaxScaleDenominator>250000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="14" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+        <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &gt; 25000 and [population] &lt; 50000</Filter>
+      <MaxScaleDenominator>250000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="13" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+    <Rule>
+      <Filter>([place] = 'town' or [place]='city') and [population] &lt; 25000</Filter>
+      <MaxScaleDenominator>250000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="12" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
+    </Rule>
+       <Rule>
+      <Filter>([place] = 'town' or [place]='city') and not [population] &gt; ''</Filter>
+      <MaxScaleDenominator>250000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="12" fill="#000" halo_radius="1" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
     </Rule>
        <Rule>
       <Filter>[place] = 'town'</Filter>
@@ -3227,11 +3312,23 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MinScaleDenominator>50000</MinScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="14" fill="#000" halo_radius="1" wrap_width="20" allow_overlap="true"/>
     </Rule>
+      <Rule>
+      <Filter>[place] = 'city'</Filter>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <MinScaleDenominator>50000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="16" fill="#000" halo_radius="1" wrap_width="20" allow_overlap="true"/>
+    </Rule>
     <Rule>
       <Filter>[place] = 'town'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>10000</MinScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="14" fill="#000" halo_radius="1" wrap_width="20" text_convert="toupper" allow_overlap="true"/>
+    </Rule>
+      <Rule>
+      <Filter>[place] = 'city'</Filter>
+      <MaxScaleDenominator>50000</MaxScaleDenominator>
+      <MinScaleDenominator>10000</MinScaleDenominator>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="16" fill="#000" halo_radius="1" wrap_width="20" text_convert="toupper" allow_overlap="true"/>
     </Rule>
     <Rule>
       <Filter>[place] = 'village'</Filter>
@@ -4730,7 +4827,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="port">5432</Parameter>
 <Parameter name="user">postgres</Parameter>
 <Parameter name="password">geo</Parameter>
-<Parameter name="table">(select way, name, population, place, capital, admin_level from planet_osm_point where place is not null) as "miejsca"</Parameter>
+<Parameter name="table">(select way, name, population, place, capital, admin_level from planet_osm_point where place is not null order by population desc) as "miejsca"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer> 
