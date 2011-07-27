@@ -3563,22 +3563,75 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and not [denomination]='orthodox'</Filter>
 <PointSymbolizer file="symbol/kosciol12.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and not [denomination]='orthodox'</Filter>
 <PointSymbolizer file="symbol/kosciol16.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and not [denomination]='orthodox'</Filter>
 <PointSymbolizer file="symbol/kosciol20.png" type="png" allow_overlap="true"/>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
 </Rule>
-
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>50000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and [denomination]='orthodox'</Filter>
+<PointSymbolizer file="symbol/cerkiew12.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and [denomination]='orthodox'</Filter>
+<PointSymbolizer file="symbol/cerkiew16.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and [denomination]='orthodox'</Filter>
+<PointSymbolizer file="symbol/cerkiew20.png" type="png" allow_overlap="true"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>50000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='muslim'</Filter>
+<PointSymbolizer file="symbol/meczet12.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='muslim'</Filter>
+<PointSymbolizer file="symbol/meczet16.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='muslim'</Filter>
+<PointSymbolizer file="symbol/meczet20.png" type="png" allow_overlap="true"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>50000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='jewish'</Filter>
+<PointSymbolizer file="symbol/synagoga10.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='jewish'</Filter>
+<PointSymbolizer file="symbol/synagoga12.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='jewish'</Filter>
+<PointSymbolizer file="symbol/synagoga16.png" type="png" allow_overlap="true"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
@@ -4089,28 +4142,75 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and not [denomination]='orthodox'</Filter>
 <PointSymbolizer file="symbol/kosciol12.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-<MinScaleDenominator>25000</MinScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and not [denomination]='orthodox'</Filter>
 <PointSymbolizer file="symbol/kosciol16.png" type="png" allow_overlap="true"/>
 </Rule>
 <Rule>
-<MaxScaleDenominator>25000</MaxScaleDenominator>
-<MinScaleDenominator>10000</MinScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
-<PointSymbolizer file="symbol/kosciol20.png" type="png" allow_overlap="true"/>
-</Rule>
-<Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-<Filter>[amenity]='place_of_worship' and [religion]='christian'</Filter>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and not [denomination]='orthodox'</Filter>
 <PointSymbolizer file="symbol/kosciol20.png" type="png" allow_overlap="true"/>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
 </Rule>
-
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>50000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and [denomination]='orthodox'</Filter>
+<PointSymbolizer file="symbol/cerkiew12.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and [denomination]='orthodox'</Filter>
+<PointSymbolizer file="symbol/cerkiew16.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='christian' and [denomination]='orthodox'</Filter>
+<PointSymbolizer file="symbol/cerkiew20.png" type="png" allow_overlap="true"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>50000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='muslim'</Filter>
+<PointSymbolizer file="symbol/meczet12.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='muslim'</Filter>
+<PointSymbolizer file="symbol/meczet16.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='muslim'</Filter>
+<PointSymbolizer file="symbol/meczet20.png" type="png" allow_overlap="true"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<MinScaleDenominator>50000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='jewish'</Filter>
+<PointSymbolizer file="symbol/synagoga10.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='jewish'</Filter>
+<PointSymbolizer file="symbol/synagoga12.png" type="png" allow_overlap="true"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[amenity]='place_of_worship' and [religion]='jewish'</Filter>
+<PointSymbolizer file="symbol/synagoga16.png" type="png" allow_overlap="true"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>

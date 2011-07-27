@@ -38,6 +38,7 @@ node,way   boundary     text         linear
 node,way   building     text         polygon
 node	     capital      text         linear
 node,way   construction text         linear
+node,way	denomination	text	polygon
 node,way   disused      text         linear
 node       ele          text         linear
 node,way   heritiage     text         polygon
