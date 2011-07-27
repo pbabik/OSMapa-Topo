@@ -3738,6 +3738,18 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
+<Filter>[historic]='ruins'</Filter>
+<PointSymbolizer file="symbol/ruiny16.png" type="png"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+<Filter>[historic]='ruins'</Filter>
+<PointSymbolizer file="symbol/ruiny12.png" type="png"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
 <Filter>[historic]='castle'</Filter>
 <PointSymbolizer file="symbol/zamek16.png" type="png"/>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
@@ -4315,6 +4327,18 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
 </Rule>
 <Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<Filter>[historic]='ruins'</Filter>
+<PointSymbolizer file="symbol/ruiny16.png" type="png"/>
+<TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>
+</Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+<Filter>[historic]='ruins'</Filter>
+<PointSymbolizer file="symbol/ruiny12.png" type="png"/>
+</Rule>
+<Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
 <Filter>[historic]='castle'</Filter>
@@ -4636,7 +4660,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="port">5432</Parameter>
 <Parameter name="user">postgres</Parameter>
 <Parameter name="password">geo</Parameter>
-<Parameter name="table">(select way,highway,railway,ref,oneway,route,type,operator from planet_osm_line WHERE route is not null OR railway='tram') as "transport_publiczny"</Parameter>
+<Parameter name="table">(select way,highway,railway,ref,oneway,route,type from planet_osm_line WHERE route is not null OR railway='tram') as "transport_publiczny"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer>
