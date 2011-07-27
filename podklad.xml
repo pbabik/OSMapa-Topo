@@ -3551,7 +3551,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
-<MinScaleDenominator>10000</MinScaleDenominator>
 <Filter>[man_made]='windmill'</Filter>
 <PointSymbolizer file="symbol/wiatrak16.png" type="png"/>
 </Rule>
