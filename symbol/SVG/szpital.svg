@@ -14,10 +14,10 @@
    id="svg3408"
    version="1.1"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="nemocnice.svg"
-   inkscape:export-filename="/home/babik/GIS/symbol/nemocnice_male.png"
-   inkscape:export-xdpi="45.354332"
-   inkscape:export-ydpi="45.354332">
+   sodipodi:docname="szpital.svg"
+   inkscape:export-filename="/home/mechanik/OSMapa-Topo/symbol/szpital12.png"
+   inkscape:export-xdpi="68.031494"
+   inkscape:export-ydpi="68.031494">
   <defs
      id="defs3410" />
   <sodipodi:namedview
@@ -34,8 +34,8 @@
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1024"
-     inkscape:window-height="578"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />

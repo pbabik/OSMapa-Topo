@@ -15,9 +15,9 @@
    version="1.1"
    inkscape:version="0.48.0 r9654"
    sodipodi:docname="punktwid.svg"
-   inkscape:export-filename="/home/babik/GIS/symbol/punktwid12.png"
-   inkscape:export-xdpi="70.216728"
-   inkscape:export-ydpi="70.216728">
+   inkscape:export-filename="/home/mechanik/OSMapa-Topo/symbol/punktwid16.png"
+   inkscape:export-xdpi="91.478844"
+   inkscape:export-ydpi="91.478844">
   <defs
      id="defs4264" />
   <sodipodi:namedview
@@ -36,8 +36,8 @@
      inkscape:document-units="px"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1024"
-     inkscape:window-height="578"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1">
@@ -109,7 +109,7 @@
        d="M 8.4693069,1.4039603 7.7869369,1.3924812 7.1045669,1.3810022 7.4556931,0.79579193 7.8068192,0.21058168 8.138063,0.80727101 z"
        inkscape:transform-center-x="0.033059465"
        inkscape:transform-center-y="-0.71042418"
-       transform="matrix(0.935213,0,-0.06818116,3.7147592,0.74120929,0.0416311)" />
+       transform="matrix(0.935213,0,-0.06818116,3.7147592,0.74120929,-0.31876494)" />
     <path
        transform="matrix(0.792423,0.49667812,-2.0306261,3.1113731,7.2909376,-2.6720356)"
        inkscape:transform-center-y="-0.42392549"
