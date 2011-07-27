@@ -666,7 +666,7 @@
       <LineSymbolizer>
         <CssParameter name="stroke">#2554C7</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
+        <CssParameter name="stroke-dasharray">2,2</CssParameter>
 <CssParameter name="stroke-offset">-2</CssParameter>
 <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>
@@ -1989,7 +1989,7 @@
       <LineSymbolizer>
         <CssParameter name="stroke">#2554C7</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
+        <CssParameter name="stroke-dasharray">2,2</CssParameter>
 <CssParameter name="stroke-offset">-2</CssParameter>
 <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>
