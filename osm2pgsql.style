@@ -41,7 +41,7 @@ node,way   construction text         linear
 node,way	denomination	text	polygon
 node,way   disused      text         linear
 node       ele          text         linear
-node,way   heritiage     text         polygon
+node,way   heritage     text         polygon
 node,way   highway      text         linear
 node,way   historic     text         polygon
 node,way	information	text	polygon

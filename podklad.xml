@@ -3,92 +3,90 @@
 o zniekształceniach rzędu 500 m/km! Dopóki nie robisz mapy globalnej, masz do dyspozycji masę innych - lepszych. Dla skali lokalnej dobrym wyborem będzie UTM (
 EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - koniecznie układ 1992 - EPSG:2180, taki jaki jest teraz. A dla Europy można użyć ETRS-LCC. !-->
 <Style name="linie_dol">
-<!-- głównie czarne obwódki dla dróg, ale także granice itp. wszystkie obiekty z tabeli planet_osm_line - dozwolone. !-->
-
+<!-- głównie czarne obwódki dla dróg, ale także granice itp. wszystkie obiekty z tabeli planet_osm_line - dozwolone. -->
   <Rule>
     <MaxScaleDenominator>500000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>[highway] = 'motorway'</Filter>   
+    <Filter>[highway] = 'motorway'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">3</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
   </Rule>
-
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>[highway] = 'motorway'</Filter>   
+    <Filter>[highway] = 'motorway'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">4</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
   </Rule>
 
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>[highway] = 'motorway_link'</Filter>   
+    <Filter>[highway] = 'motorway_link'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">3</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
   </Rule>
 
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>[highway] = 'motorway'</Filter>   
+    <Filter>[highway] = 'motorway'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">6</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
   </Rule>
 
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>[highway] = 'motorway_link'</Filter>   
+    <Filter>[highway] = 'motorway_link'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">5</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
   </Rule>
 
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>[highway] = 'motorway'  and not [tunnel]&gt;=''</Filter>   
+    <Filter>[highway] = 'motorway'  and not [tunnel]&gt;=''</Filter>
     <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">9</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
+      </LineSymbolizer>
   </Rule>
   
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>[highway] = 'motorway_link' and not [tunnel]&gt;=''</Filter>   
+    <Filter>[highway] = 'motorway_link' and not [tunnel]&gt;=''</Filter>
     <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">8</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
   </Rule>
   
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([highway] = 'motorway' or [highway] = 'motorway_link')  and [bridge] &gt;='' </Filter>   
+    <Filter>([highway] = 'motorway' or [highway] = 'motorway_link')  and [bridge] &gt;='' </Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">9</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>   
+    </LineSymbolizer>
     <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">7</CssParameter>
@@ -103,12 +101,12 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">13</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
+      </LineSymbolizer>
     <LineSymbolizer>
       <CssParameter name="stroke">#FFFFFF</CssParameter>
       <CssParameter name="stroke-width">11</CssParameter>
       <CssParameter name="stroke-linejoin">round</CssParameter>
-    </LineSymbolizer>  
+    </LineSymbolizer>
   </Rule>
 
 
@@ -1886,7 +1884,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'track' and ([bridge] = 'yes' or [bridge] = 'viaduct')</Filter> 
+      <Filter>([highway] = 'track' or [highway]='footway' or [highway]='path') and [bridge] &gt; ''</Filter> 
  <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2907,8 +2905,8 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="fill">#88bdea</CssParameter>
       </PolygonSymbolizer>
       <LineSymbolizer>
-        <CssParameter name="stroke">#FFFFFF</CssParameter>
-        <CssParameter name="stroke-width">0.1</CssParameter>
+        <CssParameter name="stroke">#1569C7</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
       </LineSymbolizer>
     </Rule>
 <Rule>
@@ -2919,8 +2917,8 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="fill">#88bdea</CssParameter>
       </PolygonSymbolizer>
       <LineSymbolizer>
-        <CssParameter name="stroke">#FFFFFF</CssParameter>
-        <CssParameter name="stroke-width">0.1</CssParameter>
+        <CssParameter name="stroke">#1569C7</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
       </LineSymbolizer>
     </Rule>
 <Rule>
@@ -2930,8 +2928,8 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="fill">#88bdea</CssParameter>
       </PolygonSymbolizer>
       <LineSymbolizer>
-        <CssParameter name="stroke">#FFFFFF</CssParameter>
-        <CssParameter name="stroke-width">0.1</CssParameter>
+        <CssParameter name="stroke">#1569C7</CssParameter>
+        <CssParameter name="stroke-width">0.5</CssParameter>
       </LineSymbolizer>
     </Rule>
 <Rule>
@@ -2977,7 +2975,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>10000</MinScaleDenominator>
-    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and not ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
+    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and not ([historic] &gt; '' or [heritage] &gt; '')</Filter>
     <PolygonSymbolizer>
   <CssParameter name="fill">#989898</CssParameter>
   </PolygonSymbolizer>
@@ -2989,7 +2987,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
      <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>10000</MinScaleDenominator>
-    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and ([historic] &gt; '' or [heritiage] &gt; '')</Filter>
+    <Filter>([building] &gt; '' and [way_area] &gt;= 400) and ([historic] &gt; '' or [heritage] &gt; '')</Filter>
     <PolygonSymbolizer>
   <CssParameter name="fill">#7c97ae</CssParameter>
   </PolygonSymbolizer>
@@ -3001,7 +2999,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+    <Filter>[building] &gt; '' and not ([heritage] &gt; '' or [historic] &gt; '')</Filter>
     <PolygonSymbolizer>
   <CssParameter name="fill">#BBBBBB</CssParameter>
   </PolygonSymbolizer>
@@ -3013,7 +3011,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>[building] &gt; '' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+    <Filter>[building] &gt; '' and ([heritage] &gt; '' or [historic] &gt; '')</Filter>
     <PolygonSymbolizer>
   <CssParameter name="fill">#7c97ae</CssParameter>
   </PolygonSymbolizer>
@@ -3024,7 +3022,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
     <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>    
-<Filter>[building] &gt; '' and not ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+<Filter>[building] &gt; '' and not ([heritage] &gt; '' or [historic] &gt; '')</Filter>
       <BuildingSymbolizer>
         <CssParameter name="fill">#BBBBBB</CssParameter>
         <CssParameter name="fill-opacity">0.75</CssParameter>
@@ -3033,7 +3031,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
     <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>    
-<Filter>[building] &gt; '' and ([heritiage] &gt; '' or [historic] &gt; '')</Filter>
+<Filter>[building] &gt; '' and ([heritage] &gt; '' or [historic] &gt; '')</Filter>
       <BuildingSymbolizer>
         <CssParameter name="fill">#7c97ae</CssParameter>
         <CssParameter name="fill-opacity">0.75</CssParameter>
@@ -3367,7 +3365,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1" wrap_width="0"/>
     </Rule>
     </Style>
-    
     <Style name="punkty">
     <!-- POI wszelkiego rodzaju -->
     <Rule>
@@ -3446,7 +3443,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[amenity]='shelter'</Filter>  
 <PointSymbolizer file="symbol/wiata16.png" type="png" allow_overlap="true"></PointSymbolizer>
     </Rule>
-    
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>  
@@ -3459,8 +3455,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <PointSymbolizer file="symbol/schronisko16.png" type="png" allow_overlap="true"></PointSymbolizer>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
     </Rule>
-  
-
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
@@ -3492,8 +3486,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[leisure]='swimming_pool' or [amenity]='swimming_pool'</Filter>
 <PointSymbolizer file="symbol/basen.png"></PointSymbolizer>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#0000FF" dy="12" halo_radius="1" wrap_width="20"/>    
-</Rule>  
-
+</Rule>
     <Rule>
       <Filter> [tourism] = 'information' and not ([information]='guidepost' or [information]='map')</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -3505,14 +3498,12 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/information16.png" type="png"></PointSymbolizer>
     </Rule>
-    
    <Rule>
       <Filter> [tourism] = 'information' and [information]='guidepost'</Filter>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>10000</MinScaleDenominator>
       <PointSymbolizer file="symbol/drogowskaz12.png" type="png"></PointSymbolizer>
     </Rule>
-    
      <Rule>
       <Filter> [tourism] = 'information' and [information]='guidepost'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
@@ -3524,7 +3515,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MinScaleDenominator>10000</MinScaleDenominator>
       <PointSymbolizer file="symbol/mapa12.png" type="png"></PointSymbolizer>
     </Rule>
-    
      <Rule>
       <Filter> [tourism] = 'information' and [information]='map'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
@@ -3541,13 +3531,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/punktwid16.png" type="png"></PointSymbolizer>
     </Rule>    
-    
   <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[tourism]='attraction'</Filter>  
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
   </Rule>
-    
           <Rule>
       <Filter> [amenity] = 'fire_station'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
@@ -3609,7 +3597,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="12"/>
       <PointSymbolizer file="symbol/kantor.png" type="png"/>
     </Rule>
-    
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>    
 <MinScaleDenominator>10000</MinScaleDenominator>
@@ -4025,6 +4012,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <PointSymbolizer file="symbol/tramwaj.png" type="png"></PointSymbolizer>
 </Rule>
 <Rule>
+<MaxScaleDenominator>5000</MaxScaleDenominator>
+<Filter>[highway]='bus_stop' or [railway]='tram_stop'</Filter>
+<TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="8" fill="#000000" halo_radius="1" wrap_width="20"></TextSymbolizer>
+</Rule>
+<Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <Filter>[amenity]='bus_station'</Filter>
 <PointSymbolizer file="symbol/dworzec_a.png" type="png"></PointSymbolizer>
@@ -4062,6 +4054,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>5000</MaxScaleDenominator>
 <Filter>[addr:housenumber] &gt; ''</Filter>  
 <TextSymbolizer name="addr:housenumber" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1" wrap_width="20"/>    
+</Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[heritage]&gt; ''</Filter>
+<PointSymbolizer file="symbol/zabytek12.png" type="png"></PointSymbolizer>
 </Rule>
   </Style>
 
@@ -4556,7 +4553,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Filter>[leisure] = 'swimming_pool' or [amenity] = 'swimming_pool'</Filter>
     <PointSymbolizer file="symbol/basen.png" type="png"></PointSymbolizer>
   </Rule>
-
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[heritage]&gt; ''</Filter>
+<PointSymbolizer file="symbol/zabytek12.png" type="png"></PointSymbolizer>
+</Rule>
   </Style>
 
 
