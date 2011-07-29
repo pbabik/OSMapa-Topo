@@ -18,8 +18,8 @@
    sodipodi:docname="chalet.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/mechanik/OSMapa-Topo/symbol/chalet16.png"
-   inkscape:export-xdpi="2.4789934"
-   inkscape:export-ydpi="2.4789934">
+   inkscape:export-xdpi="1.8560499"
+   inkscape:export-ydpi="1.8560499">
   <metadata
      id="metadata2975">
     <rdf:RDF>
@@ -45,8 +45,8 @@
      pagecolor="#ffffff"
      id="base"
      inkscape:zoom="0.96605417"
-     inkscape:cx="387.24947"
-     inkscape:cy="284.26441"
+     inkscape:cx="205.58264"
+     inkscape:cy="301.94251"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg2"
@@ -209,9 +209,9 @@
      id="path645"
      sodipodi:nodetypes="cccccccccccccc" />
   <path
-     sodipodi:nodetypes="cccccccccccccc"
+     sodipodi:nodetypes="cccccccccc"
      id="path9518"
-     d="m 296.09864,16.18237 -261.896841,241.39575 52.379023,0 0,311.7964 157.138458,0 0,-184.01232 108.3503,0 3.7e-4,184.01232 153.54652,0 0,-311.7964 52.37937,0 -261.8972,-241.39575 0,0 0,0 z"
-     style="font-size:12px;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="M 294.54594,25.820223 40.734235,257.44955 l 50.762006,0 0,299.1817 c 199.695069,-0.0251 264.838019,-4.07682 406.099409,0 l 0,-299.1817 50.76234,0 -253.81205,-231.629327 0,0 z"
+     style="font-size:12px;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:38.5729332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      inkscape:connector-curvature="0" />
 </svg>

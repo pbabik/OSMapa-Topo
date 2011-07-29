@@ -2734,6 +2734,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Style name="pokrycie_terenu_gora">
 <!--cmentarze, parki, kamieniołomy, obiekty sportowe, ogródki działkowe, śmietniska, bagna +place i drogi reprezentowane powierzchniowo -->
+
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <Filter>([landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard' and not [religion]&gt;'') or (([landuse]='cemetery' or [amenity]='grave_yard') and [religion]='christian')</Filter>
@@ -2917,7 +2918,8 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Style>
 
 <Style name="zbiorniki_wodne">
-<!-- jeziora, stawy, oraz rzeki reprezentowane powierzchniowo -->
+<!-- jeziora, stawy, oraz rzeki reprezentowane powierzchniowo + wyspy na nich położone -->
+
 <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
@@ -2960,6 +2962,17 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="fill">#88bdea</CssParameter>
       </PolygonSymbolizer>
 </Rule>
+  <Rule>
+    <Filter>[natural]='land'</Filter>
+    <PolygonSymbolizer>
+      <CssParameter name="fill">#FFFEE7</CssParameter>
+     <CssParameter name="fill-opacity">1</CssParameter>
+    </PolygonSymbolizer>
+    <LineSymbolizer>
+      <CssParameter name="stroke">#1569C7</CssParameter>
+      <CssParameter name="stroke-width">1</CssParameter>
+    </LineSymbolizer>
+  </Rule>
 </Style>
 
 <Style name="budynki">
