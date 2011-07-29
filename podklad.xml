@@ -1950,6 +1950,27 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-offset">-2</CssParameter>
       </LineSymbolizer>
     </Rule>
+  <Rule>
+  <MaxScaleDenominator>50000</MaxScaleDenominator>
+  <MinScaleDenominator>10000</MinScaleDenominator>
+<Filter>[man_made]='pier'</Filter>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">2</CssParameter>
+</LineSymbolizer>
+  </Rule>
+  <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[man_made]='pier'</Filter>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">4</CssParameter>
+</LineSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#FFFFFF</CssParameter>
+<CssParameter name="stroke-width">3</CssParameter>
+</LineSymbolizer>
+  </Rule>
 </Style>
 
 <Style name="drogi_wojewodzkie">
@@ -3431,6 +3452,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <Filter> [tourism] = 'camp_site'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/camp16.png" type="png"></PointSymbolizer>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>
     </Rule>
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -3443,6 +3465,17 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[amenity]='shelter'</Filter>  
 <PointSymbolizer file="symbol/wiata16.png" type="png" allow_overlap="true"></PointSymbolizer>
     </Rule>
+  <Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>  
+<Filter>[tourism]='chalet'</Filter>  
+<PointSymbolizer file="symbol/chalet12.png" type="png"></PointSymbolizer>
+    </Rule>
+      <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[tourism]='chalet'</Filter>  
+<PointSymbolizer file="symbol/chalet16.png" type="png"></PointSymbolizer>
+    </Rule>
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>  
@@ -3453,7 +3486,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <Filter>[tourism]='alpine_hut'</Filter>  
 <PointSymbolizer file="symbol/schronisko16.png" type="png" allow_overlap="true"></PointSymbolizer>
-<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>
     </Rule>
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -4128,6 +4161,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <Filter> [tourism] = 'camp_site'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/camp16.png" type="png"></PointSymbolizer>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>
     </Rule>
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -4140,7 +4174,17 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Filter>[amenity]='shelter'</Filter>  
 <PointSymbolizer file="symbol/wiata16.png" type="png" allow_overlap="true"></PointSymbolizer>
     </Rule>
-    
+  <Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>  
+<Filter>[tourism]='chalet'</Filter>  
+<PointSymbolizer file="symbol/chalet12.png" type="png"></PointSymbolizer>
+    </Rule>
+      <Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[tourism]='chalet'</Filter>  
+<PointSymbolizer file="symbol/chalet16.png" type="png"></PointSymbolizer>
+    </Rule> 
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>  
@@ -4151,7 +4195,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <Filter>[tourism]='alpine_hut'</Filter>  
 <PointSymbolizer file="symbol/schronisko16.png" type="png" allow_overlap="true"></PointSymbolizer>
-<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>    
+<TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#FF0000" dy="12" halo_radius="1" wrap_width="20"/>
     </Rule>
   
   <Rule>
@@ -4660,7 +4704,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Parameter name="port">5432</Parameter>
 <Parameter name="user">postgres</Parameter>
 <Parameter name="password">geo</Parameter>
-<Parameter name="table">(select * from planet_osm_line WHERE highway is not null) as "sciezki"</Parameter>
+<Parameter name="table">(select * from planet_osm_line WHERE highway is not null OR man_made='pier') as "sciezki"</Parameter>
 <Parameter name="geometry_field">way</Parameter>
     </Datasource>
   </Layer>
