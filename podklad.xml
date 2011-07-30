@@ -1374,17 +1374,12 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
     
 <Rule>
-<MaxScaleDenominator>200000</MaxScaleDenominator>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>
-            <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
         <LineSymbolizer>
-        <CssParameter name="stroke">#696969</CssParameter>
-        <CssParameter name="stroke-width">1</CssParameter>
+        <CssParameter name="stroke">#999999</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-dasharray">10,10</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>
@@ -1401,19 +1396,13 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
-        <CssParameter name="stroke">#696969</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-        <LineSymbolizer>
-        <CssParameter name="stroke">#696969</CssParameter>
-        <CssParameter name="stroke-width">1</CssParameter>
-        <CssParameter name="stroke-dasharray">10,10</CssParameter>
+        <CssParameter name="stroke">#999999</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>
         <LineSymbolizer>
         <CssParameter name="stroke">#ffffff</CssParameter>
-        <CssParameter name="stroke-width">1</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-dasharray">10,10,10</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>
@@ -3284,7 +3273,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <Filter>([place] = 'town' or [place]='city') and [population] &gt; 100000 and [population] &lt; 200000</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>250000</MinScaleDenominator>
-      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="16" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W" text_convert="toupper"/>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="16" fill="#000" halo_radius="2" wrap_width="20" placement-type="simple" placements="NW,X,SE,SW,S,N,NE,E,W"/>
     </Rule>
     <Rule>
       <Filter>([place] = 'town' or [place]='city') and [population] &gt; 50000 and [population] &lt; 100000</Filter>
