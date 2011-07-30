@@ -96,7 +96,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([highway] = 'motorway' or [highway] = 'motorway_link')  and [bridge] &gt;='' </Filter>   
+    <Filter>([highway] = 'motorway' or [highway] = 'motorway_link')  and [bridge] &gt;='' </Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">13</CssParameter>
@@ -113,7 +113,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
     <MaxScaleDenominator>500000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>   
+    <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">3</CssParameter>
@@ -124,7 +124,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>   
+    <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">5.5</CssParameter>
@@ -135,7 +135,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>[highway] = 'primary_link' or [highway] = 'trunk_link'</Filter>   
+    <Filter>[highway] = 'primary_link' or [highway] = 'trunk_link'</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#000000</CssParameter>
       <CssParameter name="stroke-width">4.5</CssParameter>
@@ -312,7 +312,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link' ) and [bridge] &gt;=''</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link' ) and [bridge] &gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">9.5</CssParameter>
@@ -328,7 +328,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary'  and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'secondary'  and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">8.5</CssParameter>
@@ -339,7 +339,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">7.5</CssParameter>
@@ -350,7 +350,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link' )  and [bridge] &gt;='' </Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link' )  and [bridge] &gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">11.5</CssParameter>
@@ -364,7 +364,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule> 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary'  and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'secondary'  and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">10.5</CssParameter>
@@ -373,7 +373,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
   <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">9.5</CssParameter>
@@ -382,7 +382,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link')  and [bridge] &gt;='' </Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link')  and [bridge] &gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">13.5</CssParameter>
@@ -399,7 +399,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>250000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>   
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -410,7 +410,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>250000</MaxScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>   
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -421,7 +421,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">5.5</CssParameter>
@@ -432,7 +432,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and [bridge] &gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and [bridge] &gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">8.5</CssParameter>
@@ -448,7 +448,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and not [tunnel]&gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and not [tunnel]&gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">6.5</CssParameter>
@@ -459,7 +459,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and [bridge] &gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and [bridge] &gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">9.5</CssParameter>
@@ -474,7 +474,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and not [tunnel]&gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and not [tunnel]&gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">8.5</CssParameter>
@@ -483,7 +483,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and [bridge] &gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and [bridge] &gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">11.5</CssParameter>
@@ -521,7 +521,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' ) and [bridge] &gt;='' </Filter>
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' or [highway]='service' or [highway]='living_street' or [highway]='pedestrian' ) and [bridge] &gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -557,7 +557,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and [bridge] &gt;=''  </Filter>
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' or [highway]='service' or [highway]='living_street' or [highway]='pedestrian')  and [bridge] &gt;=''  </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">6</CssParameter>
@@ -595,7 +595,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and [bridge] &gt;=''  </Filter>
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' or [highway]='service' or [highway]='living_street' or [highway]='pedestrian')  and [bridge] &gt;=''  </Filter>
 
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
@@ -632,7 +632,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>( [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] ='road')  and [bridge] &gt;=''  </Filter>
+      <Filter>( [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] ='road' or [highway]='service' or [highway]='living_street' or [highway]='pedestrian')  and [bridge] &gt;=''  </Filter>
 
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
@@ -651,7 +651,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
 
-      <Filter>[highway] = 'service'</Filter>   
+      <Filter>[highway] = 'service'</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#666666</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -665,7 +665,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
 
-      <Filter>[highway] = 'service'  and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'service'  and not [tunnel]&gt;=''</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
@@ -677,7 +677,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
 
-      <Filter>([highway] = 'service'  and not [surface]='unpaved') and not [tunnel]&gt;='' </Filter>   
+      <Filter>([highway] = 'service'  and not [surface]='unpaved') and not [tunnel]&gt;='' </Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -689,7 +689,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
 
-      <Filter>([highway] = 'service' and [surface]='unpaved' or [tracktype]='grade1') and not [tunnel]&gt;='' </Filter>   
+      <Filter>([highway] = 'service' and [surface]='unpaved' or [tracktype]='grade1') and not [tunnel]&gt;='' </Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
         <CssParameter name="stroke-width">3.5</CssParameter>
@@ -701,7 +701,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 
-      <Filter>([highway] = 'service' and not [surface]='unpaved')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'service' and not [surface]='unpaved')  and not [tunnel]&gt;=''</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">4.5</CssParameter>
@@ -712,7 +712,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 
-      <Filter>([highway] = 'service'   and [surface]='unpaved' or [tracktype]='grade1') and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'service'   and [surface]='unpaved' or [tracktype]='grade1') and not [tunnel]&gt;=''</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -725,7 +725,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
    <MaxScaleDenominator>100000</MaxScaleDenominator>
    <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">grey</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -736,7 +736,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -747,7 +747,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -757,13 +757,25 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-<Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+<Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
 <LineSymbolizer>
 <CssParameter name="stroke">#000000</CssParameter>
   <CssParameter name="stroke-width">6</CssParameter>
   <CssParameter name="stroke-linejoin">round</CssParameter>
 </LineSymbolizer> 
 </Rule>
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+<Filter>[man_made]='pier'</Filter>
+<LineSymbolizer>
+<CssParameter name="stroke">#000000</CssParameter>
+<CssParameter name="stroke-width">4</CssParameter>
+</LineSymbolizer>
+<LineSymbolizer>
+<CssParameter name="stroke">#FFFFFF</CssParameter>
+<CssParameter name="stroke-width">3</CssParameter>
+</LineSymbolizer>
+  </Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -1286,7 +1298,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>500000</MinScaleDenominator>
 <MaxScaleDenominator>2000000</MaxScaleDenominator>
-      <Filter>[railway] = 'rail'</Filter>   
+      <Filter>[railway] = 'rail'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
@@ -1296,7 +1308,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
 <MinScaleDenominator>200000</MinScaleDenominator>
-      <Filter>[railway] = 'rail'</Filter>   
+      <Filter>[railway] = 'rail'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1312,7 +1324,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[railway] = 'rail'  and not [tunnel]&gt;=''</Filter>   
+      <Filter>[railway] = 'rail'  and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1329,7 +1341,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
     <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <Filter>[railway] = 'rail'  and not [tunnel]&gt;=''</Filter>   
+      <Filter>[railway] = 'rail'  and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -1346,7 +1358,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
     <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <Filter>[railway] = 'narrow_gauge' or [railway]='preserved'  and not [tunnel]&gt;=''</Filter>   
+      <Filter>[railway] = 'narrow_gauge' or [railway]='preserved'  and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1364,7 +1376,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>
             <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1387,7 +1399,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#696969</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1431,7 +1443,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
  <Rule>
  <MaxScaleDenominator>250000</MaxScaleDenominator>
  <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>([waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch')</Filter>   
+      <Filter>([waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch')</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">0.5</CssParameter>
@@ -1441,7 +1453,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
      <Rule>
  <MaxScaleDenominator>100000</MaxScaleDenominator>
  <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1452,7 +1464,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
  <MaxScaleDenominator>50000</MaxScaleDenominator>
  <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1463,7 +1475,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <Rule>
  <MaxScaleDenominator>25000</MaxScaleDenominator>
  <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1473,7 +1485,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
         <Rule>
  <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1484,7 +1496,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
   <MinScaleDenominator>100000</MinScaleDenominator>
   <MaxScaleDenominator>1000000</MaxScaleDenominator>
-      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>   
+      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1495,7 +1507,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <Rule>
   <MaxScaleDenominator>100000</MaxScaleDenominator>
   <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>   
+      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1505,7 +1517,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
           <Rule>
   <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>   
+      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#1569C7</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1549,7 +1561,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <!--wypełnienie dla autostrad i dróg krajowych-->
 <Rule>
 <MinScaleDenominator>2000000</MinScaleDenominator>
-      <Filter>[highway] = 'motorway'</Filter>   
+      <Filter>[highway] = 'motorway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#153E7E</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1560,7 +1572,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>500000</MinScaleDenominator>
 <MaxScaleDenominator>2000000</MaxScaleDenominator>
-      <Filter>[highway] = 'motorway'</Filter>   
+      <Filter>[highway] = 'motorway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#153E7E</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1571,7 +1583,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'motorway'</Filter>   
+      <Filter>[highway] = 'motorway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1582,7 +1594,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[highway] = 'motorway'</Filter>   
+      <Filter>[highway] = 'motorway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1593,7 +1605,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'motorway'  and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'motorway'  and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -1603,7 +1615,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[highway] = 'motorway' and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'motorway' and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#809bc0</CssParameter>
         <CssParameter name="stroke-width">8</CssParameter>
@@ -1613,7 +1625,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
   <Rule>
 <MinScaleDenominator>2000000</MinScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>   
+      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#C11B17</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1623,7 +1635,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MinScaleDenominator>500000</MinScaleDenominator>
 <MaxScaleDenominator>2000000</MaxScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>   
+      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#C11B17</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1633,7 +1645,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>   
+      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#C11B17</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1644,7 +1656,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>   
+      <Filter>[highway] = 'primary' or [highway] = 'trunk'</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#f38730</CssParameter>
         <CssParameter name="stroke-width">4.5</CssParameter>
@@ -1656,7 +1668,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'trunk')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'trunk')  and not [tunnel]&gt;=''</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#f38730</CssParameter>
         <CssParameter name="stroke-width">7</CssParameter>
@@ -1668,7 +1680,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'trunk')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'trunk')  and not [tunnel]&gt;=''</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#f38730</CssParameter>
         <CssParameter name="stroke-width">9</CssParameter>
@@ -1678,7 +1690,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
   <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'trunk')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'trunk')  and not [tunnel]&gt;=''</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#f38730</CssParameter>
         <CssParameter name="stroke-width">11</CssParameter>
@@ -1705,7 +1717,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[highway] = 'motorway_link'</Filter>   
+      <Filter>[highway] = 'motorway_link'</Filter>
       <LineSymbolizer>
       <CssParameter name="stroke">#809bc0</CssParameter>
       <CssParameter name="stroke-width">2</CssParameter>
@@ -1716,7 +1728,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>[highway] = 'motorway_link'  and not [tunnel]&gt;='' </Filter>   
+    <Filter>[highway] = 'motorway_link'  and not [tunnel]&gt;='' </Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#809bc0</CssParameter>
       <CssParameter name="stroke-width">4</CssParameter>
@@ -1726,7 +1738,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>[highway] = 'motorway_link' and not [tunnel]&gt;=''</Filter>   
+    <Filter>[highway] = 'motorway_link' and not [tunnel]&gt;=''</Filter>
     <LineSymbolizer>
       <CssParameter name="stroke">#809bc0</CssParameter>
       <CssParameter name="stroke-width">7</CssParameter>
@@ -1761,7 +1773,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'primary_link' or [highway] = 'trunk_link')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'primary_link' or [highway] = 'trunk_link')  and not [tunnel]&gt;=''</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#f38730</CssParameter>
         <CssParameter name="stroke-width">8</CssParameter>
@@ -1771,7 +1783,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
   <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'primary_link' or [highway] = 'trunk_link')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'primary_link' or [highway] = 'trunk_link')  and not [tunnel]&gt;=''</Filter>
   <LineSymbolizer>
         <CssParameter name="stroke">#f38730</CssParameter>
         <CssParameter name="stroke-width">10</CssParameter>
@@ -1782,7 +1794,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary_link'</Filter>   
+      <Filter>[highway] = 'secondary_link'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#FDED83</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1793,7 +1805,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#f3ba30</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -1805,7 +1817,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'secondary_link' and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#f3ba30</CssParameter>
         <CssParameter name="stroke-width">6</CssParameter>
@@ -1815,7 +1827,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary_link'  and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'secondary_link'  and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#f3ba30</CssParameter>
         <CssParameter name="stroke-width">8</CssParameter>
@@ -1829,7 +1841,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
  <MaxScaleDenominator>100000</MaxScaleDenominator>
  <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[highway] = 'track' or [highway]='cycleway'</Filter>   
+      <Filter>[highway] = 'track' or [highway]='cycleway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#777777</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1840,7 +1852,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
  <MaxScaleDenominator>50000</MaxScaleDenominator>
  <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'track' or [highway]='cycleway'</Filter>   
+      <Filter>[highway] = 'track' or [highway]='cycleway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#444444</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1849,7 +1861,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
        <Rule>
  <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[tracktype]='grade2'</Filter>   
+      <Filter>[tracktype]='grade2'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#444444</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1858,7 +1870,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
     <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[tracktype]='grade3' or [highway]='cycleway'</Filter>   
+      <Filter>[tracktype]='grade3' or [highway]='cycleway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#555555</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
@@ -1867,7 +1879,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
        <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[highway] = 'track' and  not [tracktype]&gt;'' or [tracktype]='grade4'</Filter>   
+      <Filter>[highway] = 'track' and  not [tracktype]&gt;'' or [tracktype]='grade4'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#666666</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
@@ -1876,7 +1888,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
        <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[tracktype]='grade5'</Filter>   
+      <Filter>[tracktype]='grade5'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#777777</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1902,7 +1914,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps'</Filter>   
+      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">0.5</CssParameter>
@@ -1913,7 +1925,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps'</Filter>   
+      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1923,7 +1935,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
     <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'path' or [highway] = 'footway'</Filter>   
+      <Filter>[highway] = 'path' or [highway] = 'footway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1933,7 +1945,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
          <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway]='steps'</Filter>   
+      <Filter>[highway]='steps'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -1963,10 +1975,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 <Filter>[man_made]='pier'</Filter>
 <LineSymbolizer>
-<CssParameter name="stroke">#000000</CssParameter>
-<CssParameter name="stroke-width">4</CssParameter>
-</LineSymbolizer>
-<LineSymbolizer>
 <CssParameter name="stroke">#FFFFFF</CssParameter>
 <CssParameter name="stroke-width">3</CssParameter>
 </LineSymbolizer>
@@ -1978,7 +1986,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MinScaleDenominator>1000000</MinScaleDenominator>
 <MaxScaleDenominator>2000000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary'</Filter>   
+      <Filter>[highway] = 'secondary'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#AF7817</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1988,7 +1996,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MinScaleDenominator>500000</MinScaleDenominator>
 <MaxScaleDenominator>1000000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary'</Filter>   
+      <Filter>[highway] = 'secondary'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#AF7817</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1999,7 +2007,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary'</Filter>   
+      <Filter>[highway] = 'secondary'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#FDED83</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -2010,7 +2018,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
 <MinScaleDenominator>100000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary'</Filter>   
+      <Filter>[highway] = 'secondary'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#FDED83</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -2021,7 +2029,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary' and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'secondary' and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#f3ba30</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -2033,7 +2041,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'secondary' and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'secondary' and not [tunnel]&gt;=''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#f3ba30</CssParameter>
         <CssParameter name="stroke-width">7</CssParameter>
@@ -2043,7 +2051,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary'  and not [tunnel]&gt;='' </Filter>   
+      <Filter>[highway] = 'secondary'  and not [tunnel]&gt;='' </Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#f3ba30</CssParameter>
         <CssParameter name="stroke-width">9</CssParameter>
@@ -2058,7 +2066,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>   
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#FDFD83</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2069,7 +2077,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>   
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#FDFD83</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -2080,7 +2088,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;=''</Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#FDFD83</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -2091,7 +2099,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;=''</Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#FDFD83</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -2102,7 +2110,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link' )  and not [tunnel]&gt;=''</Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#FDFD83</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -2112,7 +2120,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and not [tunnel]&gt;='' </Filter>   
+      <Filter>([highway] = 'tertiary' or [highway] = 'tertiary_link')  and not [tunnel]&gt;='' </Filter>
        <LineSymbolizer>
         <CssParameter name="stroke">#FDFD83</CssParameter>
         <CssParameter name="stroke-width">7</CssParameter>
@@ -2163,7 +2171,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'service'  and not [tunnel]&gt;=''</Filter>   
+      <Filter>[highway] = 'service'  and not [tunnel]&gt;=''</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2174,7 +2182,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;=''</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">2.5</CssParameter>
@@ -2184,7 +2192,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;=''</Filter>   
+      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;=''</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -2195,7 +2203,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2206,7 +2214,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
    <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -2216,7 +2224,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
    <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>   
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -2231,28 +2239,28 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway]='motorway' and not [length] &gt;3 </Filter>   
+      <Filter>[highway]='motorway' and not [length] &gt;3 </Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
     
       <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt; 7 </Filter>   
+      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt; 7 </Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
 
       <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>[highway]='motorway' and [length] &gt; 7 </Filter>   
+      <Filter>[highway]='motorway' and [length] &gt; 7 </Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway]='motorway' and not [length] &gt; 3</Filter>   
+      <Filter>[highway]='motorway' and not [length] &gt; 3</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2260,7 +2268,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2268,7 +2276,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway]='motorway' and [length] &gt; 7</Filter>   
+      <Filter>[highway]='motorway' and [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2276,7 +2284,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway]='motorway' and not [length] &gt; 3</Filter>   
+      <Filter>[highway]='motorway' and not [length] &gt; 3</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2284,7 +2292,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt;7</Filter>   
+      <Filter>[highway]='motorway' and [length] &gt; 3 and not [length] &gt;7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2292,41 +2300,41 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'motorway' and [length] &gt; 7</Filter>   
+      <Filter>[highway] = 'motorway' and [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750" />
     </Rule>
 
   <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'motorway'</Filter>   
+      <Filter>[highway] = 'motorway'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
   <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt;3 </Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt;3 </Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
     
       <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7 </Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7 </Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
 
       <Rule>
 <MinScaleDenominator>100000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7 </Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7 </Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="75" spacing="1000"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt; 3</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt; 3</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2334,7 +2342,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2342,7 +2350,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2350,7 +2358,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt; 3</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and not [length] &gt; 3</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2358,7 +2366,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt;7</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 3 and not [length] &gt;7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk2.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2366,42 +2374,42 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link') and [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
 <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#ffffff" placement="line" file="symbol/dk3.png" type="png" min_distance="30" spacing="750" />
     </Rule>
 
   <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>   
+      <Filter>[highway] = 'primary' or [highway] = 'primary_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
  <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="50" spacing="900"/>
     </Rule>
 
  <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw2.png" type="png" min_distance="50" spacing="900"/>
     </Rule>
 
  <Rule>
 <MinScaleDenominator>200000</MinScaleDenominator>
 <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="8" fill="#000000" placement="line" file="symbol/dw3.png" type="png" min_distance="50" spacing="900"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="50" />  
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2409,7 +2417,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="50" />  
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw2.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2417,7 +2425,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="50" />  
       <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw3.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2425,7 +2433,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and not [length] &gt; 3</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw.png" type="png" min_distance="30" spacing="750"/>
     </Rule>
@@ -2433,7 +2441,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 3 and not [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw2.png" type="png" min_distance="30"/>
     </Rule>
@@ -2441,34 +2449,34 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>   
+      <Filter>([highway] = 'secondary' or [highway] = 'secondary_link') and [length] &gt; 7</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="9" fill="#000000" placement="line" file="symbol/dw3.png" type="png" min_distance="30"/>
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'secondary' or [highway] = 'secondary_link' </Filter>   
+      <Filter>[highway] = 'secondary' or [highway] = 'secondary_link' </Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>    
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter> 
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>   
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>   
+      <Filter>[highway] = 'tertiary' or [highway] = 'tertiary_link' </Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
@@ -2489,76 +2497,76 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'service'</Filter>    
+      <Filter>[highway] = 'service'</Filter> 
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" /> 
     </Rule>
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'service'</Filter>   
+      <Filter>[highway] = 'service'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" /> 
     </Rule>
 
    <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street'</Filter>   
+      <Filter>[highway] = 'living_street'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[highway] = 'track' or [highway]='path'</Filter>   
+      <Filter>[highway] = 'track' or [highway]='path'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
   <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[highway] = 'construction'</Filter>   
+      <Filter>[highway] = 'construction'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="9" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
    <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'living_street'</Filter>   
+      <Filter>[highway] = 'living_street'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" halo_radius="1"  placement="line" max_char_angle_delta="30" />  
     </Rule>
 
  <Rule>
  <MaxScaleDenominator>50000</MaxScaleDenominator>
  <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="9" fill="#0000FF" halo_radius="1"  placement="line" dx="6" dy="6" max_char_angle_delta="30"/>
     </Rule>
     
         <Rule>
  <MaxScaleDenominator>25000</MaxScaleDenominator>
  <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#0000FF" halo_radius="1"  placement="line" dx="7" dy="7" max_char_angle_delta="30"/>
     </Rule>
     
         <Rule>
  <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>   
+      <Filter>[waterway] = 'stream' or [waterway] = 'drain' or [waterway] = 'ditch'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#0000FF" halo_radius="1"  placement="line" dx="7" dy="7" max_char_angle_delta="30"/>
     </Rule>
 
   <Rule>
   <MinScaleDenominator>100000</MinScaleDenominator>
   <MaxScaleDenominator>250000</MaxScaleDenominator>
-      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>   
+      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#0000FF" halo_radius="1"  placement="line" dx="7" dy="7" max_char_angle_delta="30" />
     </Rule> 
     
       <Rule>
   <MaxScaleDenominator>100000</MaxScaleDenominator>
   <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>   
+      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#0000FF" halo_radius="1"  placement="line" dx="7" dy="7" max_char_angle_delta="30"  />
     </Rule> 
     
           <Rule>
   <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>   
+      <Filter>[waterway] = 'river' or [waterway] = 'canal'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="10" fill="#0000FF" halo_radius="1"  placement="line" dx="7" dy="7" max_char_angle_delta="30" />
     </Rule> 
   
@@ -3479,7 +3487,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <PointSymbolizer file="symbol/wiata16.png" type="png" allow_overlap="true"></PointSymbolizer>
     </Rule>
   <Rule>
-<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>  
 <Filter>[tourism]='chalet'</Filter>  
 <PointSymbolizer file="symbol/chalet12.png" type="png"></PointSymbolizer>
@@ -4060,7 +4068,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>5000</MaxScaleDenominator>
 <Filter>[highway]='bus_stop' or [railway]='tram_stop'</Filter>
-<TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="8" fill="#000000" halo_radius="1" wrap_width="20"></TextSymbolizer>
+<TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="8" fill="#000000" halo_radius="1" wrap_width="20" dy="6"></TextSymbolizer>
 </Rule>
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -4188,7 +4196,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <PointSymbolizer file="symbol/wiata16.png" type="png" allow_overlap="true"></PointSymbolizer>
     </Rule>
   <Rule>
-<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>  
 <Filter>[tourism]='chalet'</Filter>  
 <PointSymbolizer file="symbol/chalet12.png" type="png"></PointSymbolizer>
