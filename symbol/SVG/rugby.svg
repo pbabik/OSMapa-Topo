@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="161.66531"
+   height="98.176353"
+   id="svg2095"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.1 r9760"
+   version="1.0"
+   sodipodi:docname="rugby.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2097">
+    <linearGradient
+       id="linearGradient3749">
+      <stop
+         id="stop3751"
+         offset="0"
+         style="stop-color:#722e00;stop-opacity:1;" />
+      <stop
+         style="stop-color:#722e00;stop-opacity:1;"
+         offset="0.5"
+         id="stop3813" />
+      <stop
+         id="stop3753"
+         offset="1"
+         style="stop-color:#722e00;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3851">
+      <stop
+         id="stop3853"
+         offset="0"
+         style="stop-color:#dcdcdc;stop-opacity:1;" />
+      <stop
+         id="stop3855"
+         offset="1"
+         style="stop-color:white;stop-opacity:1;" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2336"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2338"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2340"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2342"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2344"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2346"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2348"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2350"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2352"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2354"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2356"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2358"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2360"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2362"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient2364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1, 0, 0, 1.2, 0, -52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3851"
+       id="linearGradient2393"
+       gradientUnits="userSpaceOnUse"
+       x1="-746.70801"
+       y1="401.65866"
+       x2="-746.70801"
+       y2="273.72971"
+       gradientTransform="matrix(0.427617, 0, 0, 0.427617, 123.922, 444.082)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3851"
+       id="linearGradient2396"
+       gradientUnits="userSpaceOnUse"
+       x1="-746.70801"
+       y1="401.65866"
+       x2="-746.70801"
+       y2="273.72971"
+       gradientTransform="matrix(0.427617, 0, 0, 0.427617, 123.922, 444.082)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3851"
+       id="linearGradient3014"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.427617,0,0,0.427617,123.922,444.082)"
+       x1="-746.70801"
+       y1="401.65866"
+       x2="-746.70801"
+       y2="273.72971" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3851"
+       id="linearGradient3016"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.427617,0,0,0.427617,123.922,444.082)"
+       x1="-746.70801"
+       y1="401.65866"
+       x2="-746.70801"
+       y2="273.72971" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3018"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3020"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3022"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3024"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3026"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3028"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3030"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3032"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3034"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3036"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3038"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3040"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3042"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3044"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3046"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3851"
+       id="linearGradient3848"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.20725856,-0.21388876,0.21388876,0.20725856,-116.10694,370.14517)"
+       x1="-746.70801"
+       y1="401.65866"
+       x2="-746.70801"
+       y2="273.72971" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3851"
+       id="linearGradient3852"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.20725856,-0.21388876,0.21388876,0.20725856,-116.10694,370.14517)"
+       x1="-746.70801"
+       y1="401.65866"
+       x2="-746.70801"
+       y2="273.72971" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3856"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3858"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3860"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3862"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3864"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3866"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3868"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3870"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3872"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3874"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3876"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3878"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3880"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3882"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3749"
+       id="radialGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2,0,-52.03)"
+       cx="-601.7984"
+       cy="260.15005"
+       fx="-601.7984"
+       fy="260.15005"
+       r="2.5253813" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.8205955"
+     inkscape:cx="35.99057"
+     inkscape:cy="43.75391"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="160px"
+     height="100px"
+     inkscape:window-width="1912"
+     inkscape:window-height="1005"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2100">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(235.946, -524.699)">
+    <g
+       id="g3847"
+       transform="matrix(0.253908, -0.00762116, 0.00762116, 0.253908, -147.411, 524.517)" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#ad4700;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.00000048;marker:none;visibility:visible;display:inline;overflow:visible"
+       d="m -209.90466,549.65168 c 20.19295,-21.74798 53.12182,-24.83276 61.84341,-16.29469 8.50932,8.33028 7.04425,39.45119 -14.08777,61.25923 -20.98399,21.65527 -54.53153,24.58684 -62.73166,17.21135 -8.20011,-7.37547 -5.21691,-40.4279 14.97602,-62.17589 z"
+       id="path1927"
+       sodipodi:nodetypes="czzzz"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:none;stroke:#722e00;stroke-width:0.59566671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       d="m -200.75923,558.60467 c 17.978,-20.16569 44.15622,-33.0096 52.69746,-25.24819 8.54123,7.7614 -5.34892,36.64191 -23.35739,53.97087 -18.21894,17.54398 -48.4525,29.33908 -53.46204,24.49972 -5.01565,-4.84525 6.14399,-33.05671 24.12197,-53.2224 z"
+       id="path2817"
+       sodipodi:nodetypes="czzzz"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:url(#linearGradient3852);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible"
+       d="m -227.36765,582.93391 c 8.06327,2.65724 22.8411,13.37726 31.65174,30.60338 3.50565,-0.82878 7.03577,-2.03051 10.57536,-3.43776 -6.9342,-20.30929 -31.137,-37.68081 -38.82667,-37.91853 -1.43579,3.56311 -2.54081,7.0672 -3.40044,10.75292 z"
+       id="rect2819"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:url(#linearGradient3848);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible"
+       d="m -148.07113,573.75225 c 1.65135,-4.27537 2.90417,-8.5774 3.75459,-12.70953 -3.7542,-15.67171 -18.51042,-26.82652 -30.91493,-30.8652 -4.22034,0.89642 -8.62128,2.26571 -12.98082,4.15939 11.0973,2.43409 34.89452,21.00169 40.14116,39.41534 z"
+       id="path2832"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#ececec;stroke-width:2.97833276;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -209.98896,570.48885 c 4.81947,-7.88577 15.19154,-18.88734 22.79554,-24.57574"
+       id="path3729"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#722e00;stroke-width:0.32761657;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -209.98896,570.48885 c 4.81947,-7.88577 15.19154,-18.88734 22.79554,-24.57574"
+       id="path3731"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-540.45208,442.94891)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3757"
+       style="color:#000000;fill:url(#radialGradient3884);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-545.73784,438.5641)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3761"
+       style="color:#000000;fill:url(#radialGradient3882);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-543.45799,435.37511)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3765"
+       style="color:#000000;fill:url(#radialGradient3880);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-537.80598,439.22451)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3769"
+       style="color:#000000;fill:url(#radialGradient3878);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-534.65236,435.68057)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3773"
+       style="color:#000000;fill:url(#radialGradient3876);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-540.22547,431.75052)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3777"
+       style="color:#000000;fill:url(#radialGradient3874);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-537.02153,427.94014)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3781"
+       style="color:#000000;fill:url(#radialGradient3872);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-531.65985,431.97859)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3785"
+       style="color:#000000;fill:url(#radialGradient3870);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-528.21131,428.67096)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3789"
+       style="color:#000000;fill:url(#radialGradient3868);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-533.41605,424.36465)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3793"
+       style="color:#000000;fill:url(#radialGradient3866);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-533.44373,424.28544)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3797"
+       style="color:#000000;fill:url(#radialGradient3864);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-529.67786,420.81494)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3801"
+       style="color:#000000;fill:url(#radialGradient3862);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-524.86802,425.47082)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3805"
+       style="color:#000000;fill:url(#radialGradient3860);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-520.99691,421.89282)"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       sodipodi:ry="3.0304577"
+       sodipodi:rx="2.5253813"
+       sodipodi:cy="260.15005"
+       sodipodi:cx="-601.7984"
+       id="path3809"
+       style="color:#000000;fill:url(#radialGradient3858);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:url(#radialGradient3856);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.9000001;marker:none;visibility:visible;display:inline;overflow:visible"
+       id="path3747"
+       sodipodi:cx="-601.7984"
+       sodipodi:cy="260.15005"
+       sodipodi:rx="2.5253813"
+       sodipodi:ry="3.0304577"
+       d="m -599.27302,260.15005 a 2.5253813,3.0304577 0 1 1 -5.05076,0 2.5253813,3.0304577 0 1 1 5.05076,0 z"
+       transform="matrix(-0.39018317,-0.38197302,0.38197302,-0.39018317,-525.72319,417.5817)"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.19783242,-0.15593744,0.20834901,-0.21282728,-382.59356,536.69527)"
+       sodipodi:open="true"
+       sodipodi:end="9.7207341"
+       sodipodi:start="5.8925783"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:ry="4.2931485"
+       sodipodi:rx="14.268405"
+       sodipodi:cy="277.82773"
+       sodipodi:cx="-585.50964"
+       id="path3735"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.21006789,-0.14343867,0.20834901,-0.21282728,-387.02846,540.58045)"
+       sodipodi:open="true"
+       sodipodi:end="9.7207341"
+       sodipodi:start="5.8925783"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:ry="4.2931485"
+       sodipodi:rx="14.268405"
+       sodipodi:cy="277.82773"
+       sodipodi:cx="-585.50964"
+       id="path3737"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.21006789,-0.14343867,0.20834901,-0.21282728,-384.08751,537.03895)"
+       sodipodi:open="true"
+       sodipodi:end="9.7207341"
+       sodipodi:start="5.8925783"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:ry="4.2931485"
+       sodipodi:rx="14.268405"
+       sodipodi:cy="277.82773"
+       sodipodi:cx="-585.50964"
+       id="path3739"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.19783236,-0.15593749,0.20834901,-0.21282728,-373.77117,526.07032)"
+       sodipodi:open="true"
+       sodipodi:end="9.7207341"
+       sodipodi:start="5.8925783"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:ry="4.2931485"
+       sodipodi:rx="14.268405"
+       sodipodi:cy="277.82773"
+       sodipodi:cx="-585.50964"
+       id="path3741"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.18865574,-0.1653116,0.20834901,-0.21282728,-364.97879,516.98165)"
+       sodipodi:open="true"
+       sodipodi:end="9.7207341"
+       sodipodi:start="5.8925783"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:ry="4.2931485"
+       sodipodi:rx="14.268405"
+       sodipodi:cy="277.82773"
+       sodipodi:cx="-585.50964"
+       id="path3743"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       transform="matrix(-0.17641964,-0.17781001,0.20834901,-0.21282728,-354.17939,506.38025)"
+       sodipodi:open="true"
+       sodipodi:end="9.7207341"
+       sodipodi:start="5.8925783"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:ry="4.2931485"
+       sodipodi:rx="14.268405"
+       sodipodi:cy="277.82773"
+       sodipodi:cx="-585.50964"
+       id="path3745"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:5.34341764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+       id="path3733"
+       sodipodi:cx="-585.50964"
+       sodipodi:cy="277.82773"
+       sodipodi:rx="14.268405"
+       sodipodi:ry="4.2931485"
+       d="m -572.31596,276.19311 a 14.268405,4.2931485 0 1 1 -26.84175,0.3825"
+       sodipodi:start="5.8925783"
+       sodipodi:end="9.7207341"
+       sodipodi:open="true"
+       transform="matrix(-0.17641964,-0.17781001,0.20834901,-0.21282728,-350.38624,502.93619)"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.71310908;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible"
+       d="m -210.9318,548.7105 c -10.31263,11.10678 -16.19653,25.01465 -18.48625,37.15587 -1.14486,6.07059 -1.38552,11.71237 -0.8043,16.37479 0.58124,4.66241 1.94952,8.39493 4.4154,10.61282 2.43526,2.19037 6.31411,3.38736 11.112,3.8271 4.79789,0.43972 10.52957,0.0672 16.66622,-1.21672 12.2733,-2.56775 26.14676,-8.81113 36.87506,-19.88261 10.78526,-11.13028 16.54012,-24.60633 18.52865,-36.4177 1.98854,-11.81138 0.44806,-22.00533 -4.45481,-26.80502 -2.52347,-2.47039 -6.49156,-3.90657 -11.30733,-4.50129 -4.81577,-0.59471 -10.5111,-0.3149 -16.5631,0.92264 -12.10399,2.47508 -25.65052,8.80351 -35.98154,19.93012 z m 2.04616,1.89186 c 9.86192,-10.62137 22.88185,-16.72075 34.47091,-19.09054 5.79454,-1.1849 11.24382,-1.44203 15.6862,-0.89343 4.44237,0.54859 7.85699,1.9276 9.69431,3.72626 3.60646,3.53057 5.57709,13.07082 3.6774,24.35447 -1.89969,11.28367 -7.45087,24.26616 -17.79763,34.94392 -10.25569,10.58377 -23.64414,16.62243 -35.44064,19.09041 -5.89825,1.234 -11.38141,1.58109 -15.83572,1.17285 -4.4543,-0.40824 -7.86595,-1.61576 -9.53074,-3.11315 -1.6342,-1.46984 -2.96105,-4.61446 -3.49572,-8.90334 -0.53467,-4.28889 -0.31296,-9.67962 0.78708,-15.51255 2.20008,-11.66588 7.90423,-25.13371 17.78455,-35.7749 z"
+       id="path2400"
+       inkscape:export-filename="/home/zibi/Desktop/rugby.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>
