@@ -115,7 +115,7 @@ cursor.execute("CREATE TEMPORARY TABLE tmp_planet_osm_track AS \
             WHEN 'green:yellow:green_bar' THEN 'ski' \
           END \
         WHEN (colour = 'green' OR colour='#00FF00' OR colour='#00ff00') AND NOT route='bicycle' THEN 'yes' \
-        WHEN (colour = 'green' OR colour='#00FF00' OR colour='#00FF00') AND route='bicycle' THEN 'bicycle' \
+        WHEN (colour = 'green' OR colour='#00FF00' OR colour='#00ff00') AND route='bicycle' THEN 'bicycle' \
       END AS kct_green, \
       CASE \
         WHEN kct_blue IS NOT NULL THEN kct_blue \
