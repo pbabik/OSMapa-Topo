@@ -1384,7 +1384,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>
+      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;='' and not [highway] &gt; ''</Filter>
         <LineSymbolizer>
         <CssParameter name="stroke">#999999</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -1402,7 +1402,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;=''</Filter>
+      <Filter>([railway] = 'disused' or [railway]='abandoned')  and not [tunnel]&gt;='' and not [highway] &gt; ''</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#999999</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
