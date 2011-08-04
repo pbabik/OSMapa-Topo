@@ -2724,16 +2724,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
     </Rule>
-<Rule>
-<MaxScaleDenominator>50000</MaxScaleDenominator>
-<Filter>[natural] = 'scrub'</Filter>
-<PolygonSymbolizer>
-  <CssParameter name="fill">#93e577</CssParameter>
-    <CssParameter name="fill-opacity">0.8</CssParameter>
-    </PolygonSymbolizer>
-<PolygonPatternSymbolizer file="symbol/krzaki.png" type="png"/>
-    </Rule>
-    
   <Rule>
 <Filter>[natural] = 'scree'</Filter>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -2800,7 +2790,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
     </Rule>
-
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[leisure]='nature_reserve'</Filter>
@@ -2810,7 +2799,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <CssParameter name="stroke-opacity">0.5</CssParameter>
 </LineSymbolizer>
 </Rule>
-
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <Filter>[landuse] = 'orchard' or [landuse] = 'allotments' or [landuse] = 'plant_nursery' or [leisure] = 'garden'</Filter>
@@ -2820,7 +2808,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
     </Rule>
-    
 <Rule>
 <MaxScaleDenominator>250000</MaxScaleDenominator>
 <Filter>[natural] = 'wetland' or [natural]='mud'</Filter>
@@ -2871,6 +2858,14 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[natural] = 'scrub'</Filter>
+<PolygonSymbolizer>
+  <CssParameter name="fill">#93e577</CssParameter>
+  </PolygonSymbolizer>
+<PolygonPatternSymbolizer file="symbol/krzaki.png" type="png"/>
+    </Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
 <Filter>[highway]='motorway' or [highway]='motorway_link'</Filter>
 <PolygonSymbolizer>
 <CssParameter name="fill">#809bc0</CssParameter>
@@ -2915,7 +2910,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-<Filter>[highway]='residential' or [highway]='unclassified' or [highway]='minor' or [highway]='road'</Filter>
+<Filter>[highway]='residential' or [highway]='unclassified' or [highway]='minor' or [highway]='road' or [highway]='service' or [highway]='track' or [highway]='path' or [highway]='cycleway'</Filter>
 <PolygonSymbolizer>
 <CssParameter name="fill">#FFFFFF</CssParameter>
 </PolygonSymbolizer>
@@ -2926,7 +2921,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-<Filter>[highway]='living_street' or [highway]='pedestrian'</Filter>
+<Filter>[highway]='living_street' or [highway]='pedestrian' or [highway]='footway'</Filter>
 <PolygonSymbolizer>
 <CssParameter name="fill">#ddd</CssParameter>
 </PolygonSymbolizer>
