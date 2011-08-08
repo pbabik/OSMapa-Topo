@@ -1295,8 +1295,16 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <CssParameter name="stroke-width">1</CssParameter>
     <CssParameter name="stroke-linejoin">round</CssParameter>
     </LineSymbolizer>
-    </Rule>    
-
+    </Rule>
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<Filter>[route]='ferry'</Filter>
+<LineSymbolizer>
+<CssParameter name="stroke">#0000FF</CssParameter>
+<CssParameter name="stroke-width">2</CssParameter>
+<CssParameter name="stroke-dasharray">4 2</CssParameter>
+</LineSymbolizer>
+</Rule>
 </Style>
 
 
@@ -2801,7 +2809,16 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
-<Filter>[landuse] = 'orchard' or [landuse] = 'allotments' or [landuse] = 'plant_nursery' or [leisure] = 'garden'</Filter>
+<Filter>[landuse] = 'orchard' or [landuse] = 'plant_nursery' or [leisure] = 'garden'</Filter>
+     <PolygonPatternSymbolizer  type="png" width="12" height="12" file="symbol/sad.png"/>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#FFFFFF</CssParameter>
+        <CssParameter name="stroke-width">0.1</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+<Rule>
+<MaxScaleDenominator>100000</MaxScaleDenominator>
+<Filter>[landuse] = 'allotments'</Filter>
      <PolygonPatternSymbolizer  type="png" width="12" height="12" file="symbol/ogrdzialk.png"/>
       <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
@@ -4081,6 +4098,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <Filter>[amenity]='bus_station'</Filter>
 <PointSymbolizer file="symbol/dworzec_a.png" type="png"></PointSymbolizer>
+<TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="8" fill="#000000" halo_radius="1" wrap_width="20" dy="6"></TextSymbolizer>
 </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
