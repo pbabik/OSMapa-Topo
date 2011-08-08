@@ -2786,6 +2786,18 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <CssParameter name="stroke-width">0.1</CssParameter>
     </LineSymbolizer>
   </Rule>
+    <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>[leisure] = 'court'</Filter>
+    <PolygonSymbolizer>
+      <CssParameter name="fill">#eb9454</CssParameter>
+     <CssParameter name="fill-opacity">0.8</CssParameter>
+    </PolygonSymbolizer>
+    <LineSymbolizer>
+      <CssParameter name="stroke">#FFFFFF</CssParameter>
+      <CssParameter name="stroke-width">0.1</CssParameter>
+    </LineSymbolizer>
+  </Rule>
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <Filter>[leisure] = 'park' or [landuse]='village_green' or [landuse]='recreation_ground'</Filter>
@@ -3565,6 +3577,36 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <PointSymbolizer file="symbol/basen.png"></PointSymbolizer>
 <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#0000FF" dy="12" halo_radius="1" wrap_width="20"/>    
 </Rule>
+ <Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[sport]='soccer'</Filter>
+    <PointSymbolizer file="symbol/pilka.png" type="png"></PointSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[sport]='basketball'</Filter>
+    <PointSymbolizer file="symbol/basketball.png" type="png"></PointSymbolizer>
+  </Rule>
+<Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[sport]='volleyball'</Filter>
+    <PointSymbolizer file="symbol/volleyball.png" type="png"></PointSymbolizer>
+  </Rule>
+<Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[sport]='tennis'</Filter>
+    <PointSymbolizer file="symbol/tennis.png" type="png"></PointSymbolizer>
+  </Rule>
+<Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[sport]='rugby'</Filter>
+    <PointSymbolizer file="symbol/rugby.png" type="png"></PointSymbolizer>
+  </Rule>
+<Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[sport]='multi'</Filter>
+    <PointSymbolizer file="symbol/multi.png" type="png"></PointSymbolizer>
+  </Rule>
     <Rule>
       <Filter> [tourism] = 'information' and not ([information]='guidepost' or [information]='map')</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -4654,6 +4696,11 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
     <Filter>([leisure] = 'pitch' or [leisure] = 'stadium') and [sport]='tennis'</Filter>
+    <PointSymbolizer file="symbol/tennis.png" type="png"></PointSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <Filter>[leisure] = 'court'</Filter>
     <PointSymbolizer file="symbol/tennis.png" type="png"></PointSymbolizer>
   </Rule>
 <Rule>
