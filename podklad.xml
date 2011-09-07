@@ -3000,7 +3000,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       </LineSymbolizer>
     </Rule>
 <Rule>
-<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MaxScaleDenominator>250000</MaxScaleDenominator>
 <Filter>[waterway]='riverbank'</Filter>
      <PolygonSymbolizer>
         <CssParameter name="fill">#88bdea</CssParameter>
@@ -3433,7 +3433,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 
     <Rule>
-      <Filter>[place] = 'hamlet'</Filter>
+      <Filter>[place] = 'hamlet' or [place]='isolated_dwelling'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000" halo_radius="1" wrap_width="0"/>
     </Rule>
@@ -3684,7 +3684,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
        <Rule>
       <Filter>[amenity] = 'hospital' or [amenity]='doctors'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000000" dy="12" halo_radius="2" wrap_width="12"/>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="2" wrap_width="12"/>
       <PointSymbolizer file="symbol/szpital16.png" type="png"/>
     </Rule>
         <Rule>
@@ -4347,7 +4347,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
        <Rule>
       <Filter>[amenity] = 'hospital' or [amenity]='doctors'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="12" fill="#000000" dy="12" halo_radius="2" wrap_width="12"/>
+      <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="2" wrap_width="12"/>
       <PointSymbolizer file="symbol/szpital16.png" type="png"/>
     </Rule>
         <Rule>
