@@ -3670,9 +3670,15 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <TextSymbolizer name="ele" face_name="DejaVu Sans Book" size="10" fill="#834100" dy="5" halo_radius="1" wrap_width="20"/>
     </Rule>
     <Rule>
-      <Filter>[amenity] = 'school' or [amenity] = 'college' or [amenity] = 'university'</Filter>
+      <Filter>[amenity] = 'college' or [amenity] = 'university'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1" wrap_width="12"/>
+    </Rule>
+       <Rule>
+      <Filter>[amenity] = 'school'</Filter>
+      <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <PointSymbolizer file="symbol/shield.png" ></PointSymbolizer> 
+    <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="12"/>
     </Rule>
     <Rule>
       <Filter>[amenity] = 'hospital'</Filter>
@@ -4324,18 +4330,22 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/information16.png" type="png"></PointSymbolizer>
     </Rule>
-
-    
           <Rule>
       <Filter> [amenity] = 'fire_station'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <PointSymbolizer file="symbol/remiza.png" type="png" ></PointSymbolizer>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="20"/>
     </Rule>
-    <Rule>
-      <Filter>[amenity] = 'school' or [amenity] = 'college' or [amenity] = 'university'</Filter>
+       <Rule>
+      <Filter>[amenity] = 'college' or [amenity] = 'university'</Filter>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" halo_radius="1" wrap_width="12"/>
+    </Rule>
+       <Rule>
+      <Filter>[amenity] = 'school'</Filter>
+      <MaxScaleDenominator>10000</MaxScaleDenominator>
+    <PointSymbolizer file="symbol/shield.png" ></PointSymbolizer> 
+    <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="10" fill="#000000" dy="12" halo_radius="1" wrap_width="12"/>
     </Rule>
     <Rule>
       <Filter>[amenity] = 'hospital'</Filter>
