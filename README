@@ -1,10 +1,12 @@
 OSMapa Topo
 
 Styl dla renderera Mapnik, umożliwiający utworzenie mapy turystycznej z danych projektu OpenStreetMap.
+Wsparcie dla tego projektu na zasadach wolontariatu zostało zakończone. W celu uzyskania wsparcia skontaktuj się z autorem <michalmacki@gmail.com>, bądź inną osobą kompetentną w zakresie biblioteki Mapnik.
+
 
 WYMAGANIA:
 
-* Mapnik 0.7.1 _z dodaną obsługą parametru stroke-offset_. W tym celu trzeba:
+* Mapnik 0.7.1 lub 2.0 (branch mapnik2) _z dodaną obsługą parametru stroke-offset_. W tym celu trzeba:
 	- ściągnąć kod źródłowy Mapnika,
 	- rozpakować go, 
 	- ściągnąć do katalogu, do którego rozpakowano źródła następujący patch: wget http://trac.mapnik.org/raw-attachment/ticket/180/mapnik0.7.1-offsets_v3.patch
