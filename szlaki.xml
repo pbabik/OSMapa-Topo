@@ -1,2514 +1,610 @@
-﻿<Map srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Map minimum-version="0.7.2" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
 <Style name="szlaki">
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_black] = 'yes' and not ([kct_red]='yes' or [kct_green]='yes' and not [kct_yellow]='yes' or [kct_blue]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_blue] = 'yes' and not ([kct_red]='yes' or [kct_green]='yes' and not [kct_yellow]='yes' or [kct_black]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes') and not ([kct_red]='yes' or [kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_yellow] = 'yes') and not ([kct_red]='yes' or [kct_green]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_black] = 'yes') and not ([kct_red]='yes' or [kct_yellow]='yes' or [kct_green]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule> 
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_green] = 'yes' and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_black]='yes' or [kct_yellow]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_yellow] = 'yes' and [kct_green] = 'yes') and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_black]='yes')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
     
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes') and not ([kct_red]='yes' or [kct_yellow]='yes' or [kct_blue]='yes')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_red] = 'yes' and not ([kct_black]='yes' or [kct_blue]='yes' or [kct_green]='yes' or [kct_yellow]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_red] = 'yes' and [kct_green] = 'yes') and not ([kct_blue]='yes' or [kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes') and not ([kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
        <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_yellow] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes') and not ([kct_blue]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes') and not ([kct_yellow]='yes' or [kct_blue]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_red] = 'yes') and not ([kct_green]='yes' or [kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
     
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_yellow] = 'yes' and [kct_red]='yes') and not ([kct_green]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
                <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_yellow]='yes') and not ([kct_red]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
                    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_black]='yes') and not ([kct_yellow]='yes' or [kct_red]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_black] = 'yes' and [kct_red]='yes') and not ([kct_yellow]='yes' or [kct_green]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_red] = 'yes' and [kct_yellow] = 'yes') and not ([kct_blue]='yes' or [kct_green]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule> 
 
      <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_red] = 'yes') and not ([kct_blue]='yes' or [kct_yellow]='yes' or [kct_green]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule> 
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_yellow] = 'yes' and [kct_red]='yes') and not ([kct_green]='yes' or [kct_blue]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_yellow] = 'yes' and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_green]='yes' or [kct_black]='yes')
 </Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /></Rule>
     
         <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_yellow] = 'yes') and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_green]='yes')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /></Rule>
     
                    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_yellow]='yes') and not ([kct_red]='yes' or [kct_blue]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /></Rule> 
     
      <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes' and [kct_yellow]='yes') and not [kct_blue]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes' and [kct_yellow]='yes') and not [kct_black]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_blue] = 'yes' and [kct_red]='yes' and [kct_yellow]='yes') and not [kct_green]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes' and [kct_blue]='yes') and not [kct_yellow]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_blue]='yes' and [kct_yellow]='yes') and not [kct_red]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">7,4</CssParameter>
-<CssParameter name="stroke-offset">12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="7,4" stroke-linejoin="round" stroke-offset="12" stroke-width="3" /></Rule> 
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_black] = 'bicycle' and not ([kct_red]='bicycle' or [kct_green]='bicycle' and not [kct_yellow]='bicycle' or [kct_blue]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_blue] = 'bicycle' and not ([kct_red]='bicycle' or [kct_green]='bicycle' and not [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_red]='bicycle' or [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_yellow] = 'bicycle') and not ([kct_red]='bicycle' or [kct_green]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_black] = 'bicycle') and not ([kct_red]='bicycle' or [kct_yellow]='bicycle' or [kct_green]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule> 
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_green] = 'bicycle' and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_black]='bicycle' or [kct_yellow]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_yellow] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_black]='bicycle')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
     
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_red]='bicycle' or [kct_yellow]='bicycle' or [kct_blue]='bicycle')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_red] = 'bicycle' and not ([kct_black]='bicycle' or [kct_blue]='bicycle' or [kct_green]='bicycle' or [kct_yellow]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_red] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_blue]='bicycle' or [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle') and not ([kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
        <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_yellow] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle') and not ([kct_blue]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle') and not ([kct_yellow]='bicycle' or [kct_blue]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_red] = 'bicycle') and not ([kct_green]='bicycle' or [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
     
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_yellow] = 'bicycle' and [kct_red]='bicycle') and not ([kct_green]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
                <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_yellow]='bicycle') and not ([kct_red]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
                    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_black]='bicycle') and not ([kct_yellow]='bicycle' or [kct_red]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_black] = 'bicycle' and [kct_red]='bicycle') and not ([kct_yellow]='bicycle' or [kct_green]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_red] = 'bicycle' and [kct_yellow] = 'bicycle') and not ([kct_blue]='bicycle' or [kct_green]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule> 
 
      <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_red] = 'bicycle') and not ([kct_blue]='bicycle' or [kct_yellow]='bicycle' or [kct_green]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule> 
            <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_yellow] = 'bicycle' and [kct_red]='bicycle') and not ([kct_green]='bicycle' or [kct_blue]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[kct_yellow] = 'bicycle' and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_green]='bicycle' or [kct_black]='bicycle')
 </Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /></Rule>
     
         <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_yellow] = 'bicycle') and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_green]='bicycle')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /></Rule>
     
                    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_yellow]='bicycle') and not ([kct_red]='bicycle' or [kct_blue]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /></Rule> 
     
      <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle' and [kct_yellow]='bicycle') and not [kct_blue]='bicycle'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-12" stroke-width="3" /></Rule> 
     
                <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle' and [kct_yellow]='bicycle') and not [kct_black]='bicycle'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_blue] = 'bicycle' and [kct_red]='bicycle' and [kct_yellow]='bicycle') and not [kct_green]='bicycle'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle' and [kct_blue]='bicycle') and not [kct_yellow]='bicycle'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-12" stroke-width="3" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_blue]='bicycle' and [kct_yellow]='bicycle') and not [kct_red]='bicycle'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-9</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-12</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule>  
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="3" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="3" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-9" stroke-width="3" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-12" stroke-width="3" /></Rule>  
        
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_black] = 'yes' and not ([kct_red]='yes' or [kct_green]='yes' and not [kct_yellow]='yes' or [kct_blue]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_blue] = 'yes' and not ([kct_red]='yes' or [kct_green]='yes' and not [kct_yellow]='yes' or [kct_black]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes') and not ([kct_red]='yes' or [kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_yellow] = 'yes') and not ([kct_red]='yes' or [kct_green]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_black] = 'yes') and not ([kct_red]='yes' or [kct_yellow]='yes' or [kct_green]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule> 
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_green] = 'yes' and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_black]='yes' or [kct_yellow]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_yellow] = 'yes' and [kct_green] = 'yes') and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_black]='yes')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
     
     <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes') and not ([kct_red]='yes' or [kct_yellow]='yes' or [kct_blue]='yes')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_red] = 'yes' and not ([kct_black]='yes' or [kct_blue]='yes' or [kct_green]='yes' or [kct_yellow]='yes')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_red] = 'yes' and [kct_green] = 'yes') and not ([kct_blue]='yes' or [kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes') and not ([kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
        <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_yellow] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes') and not ([kct_blue]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes') and not ([kct_yellow]='yes' or [kct_blue]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_red] = 'yes') and not ([kct_green]='yes' or [kct_yellow]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
     
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_yellow] = 'yes' and [kct_red]='yes') and not ([kct_green]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
                <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_yellow]='yes') and not ([kct_red]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
                    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_black]='yes') and not ([kct_yellow]='yes' or [kct_red]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_black] = 'yes' and [kct_red]='yes') and not ([kct_yellow]='yes' or [kct_green]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_red] = 'yes' and [kct_yellow] = 'yes') and not ([kct_blue]='yes' or [kct_green]='yes' or [kct_black]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule> 
 
      <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_red] = 'yes') and not ([kct_blue]='yes' or [kct_yellow]='yes' or [kct_green]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule> 
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_yellow] = 'yes' and [kct_red]='yes') and not ([kct_green]='yes' or [kct_blue]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_yellow] = 'yes' and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_green]='yes' or [kct_black]='yes')
 </Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /></Rule>
     
         <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_yellow] = 'yes') and not ([kct_red]='yes' or [kct_blue]='yes' or [kct_green]='yes')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /></Rule>
     
                    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_yellow]='yes') and not ([kct_red]='yes' or [kct_blue]='yes')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /></Rule> 
     
      <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes' and [kct_yellow]='yes') and not [kct_blue]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">8</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="8" stroke-width="2" /></Rule> 
     
       <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator><MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes' and [kct_yellow]='yes') and not [kct_black]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">8</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="8" stroke-width="2" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator><MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_blue] = 'yes' and [kct_red]='yes' and [kct_yellow]='yes') and not [kct_green]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">8</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="8" stroke-width="2" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator><MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_red]='yes' and [kct_blue]='yes') and not [kct_yellow]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">8</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="8" stroke-width="2" /></Rule> 
     
          <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator><MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'yes' and [kct_green] = 'yes' and [kct_blue]='yes' and [kct_yellow]='yes') and not [kct_red]='yes'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">5,2</CssParameter>
-<CssParameter name="stroke-offset">8</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="6" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="5,2" stroke-linejoin="round" stroke-offset="8" stroke-width="2" /></Rule> 
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_black] = 'bicycle' and not ([kct_red]='bicycle' or [kct_green]='bicycle' and not [kct_yellow]='bicycle' or [kct_blue]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_blue] = 'bicycle' and not ([kct_red]='bicycle' or [kct_green]='bicycle' and not [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_red]='bicycle' or [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_yellow] = 'bicycle') and not ([kct_red]='bicycle' or [kct_green]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_black] = 'bicycle') and not ([kct_red]='bicycle' or [kct_yellow]='bicycle' or [kct_green]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule> 
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_green] = 'bicycle' and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_black]='bicycle' or [kct_yellow]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_yellow] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_black]='bicycle')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
     
     <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_red]='bicycle' or [kct_yellow]='bicycle' or [kct_blue]='bicycle')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_red] = 'bicycle' and not ([kct_black]='bicycle' or [kct_blue]='bicycle' or [kct_green]='bicycle' or [kct_yellow]='bicycle')</Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /></Rule>
     
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_red] = 'bicycle' and [kct_green] = 'bicycle') and not ([kct_blue]='bicycle' or [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
     
    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle') and not ([kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
        <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_yellow] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle') and not ([kct_blue]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle') and not ([kct_yellow]='bicycle' or [kct_blue]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_red] = 'bicycle') and not ([kct_green]='bicycle' or [kct_yellow]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
     
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_yellow] = 'bicycle' and [kct_red]='bicycle') and not ([kct_green]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
                <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_yellow]='bicycle') and not ([kct_red]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
                    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_green] = 'bicycle' and [kct_black]='bicycle') and not ([kct_yellow]='bicycle' or [kct_red]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_blue] = 'bicycle' and [kct_black] = 'bicycle' and [kct_red]='bicycle') and not ([kct_yellow]='bicycle' or [kct_green]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#2554C7</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#2554C7" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_red] = 'bicycle' and [kct_yellow] = 'bicycle') and not ([kct_blue]='bicycle' or [kct_green]='bicycle' or [kct_black]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule> 
 
      <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_red] = 'bicycle') and not ([kct_blue]='bicycle' or [kct_yellow]='bicycle' or [kct_green]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule> 
            <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_yellow] = 'bicycle' and [kct_red]='bicycle') and not ([kct_green]='bicycle' or [kct_blue]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
 <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>[kct_yellow] = 'bicycle' and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_green]='bicycle' or [kct_black]='bicycle')
 </Filter>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /></Rule>
     
         <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_yellow] = 'bicycle') and not ([kct_red]='bicycle' or [kct_blue]='bicycle' or [kct_green]='bicycle')</Filter>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#ffba05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule>
+      <LineSymbolizer stroke="#ffba05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /></Rule>
     
                    <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_yellow]='bicycle') and not ([kct_red]='bicycle' or [kct_blue]='bicycle')</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-    </Rule> 
+ <LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /></Rule> 
     
      <Rule>
 <MaxScaleDenominator>100000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
       <Filter>([kct_black] = 'bicycle' and [kct_green] = 'bicycle' and [kct_red]='bicycle' and [kct_yellow]='bicycle') and not [kct_blue]='bicycle'</Filter>
- <LineSymbolizer>
-        <CssParameter name="stroke">#FF0000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-2</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>   
-      <LineSymbolizer>
-        <CssParameter name="stroke">#348017</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-4</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>
-         <LineSymbolizer>
-        <CssParameter name="stroke">#FFBA05</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-6</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-             <LineSymbolizer>
-        <CssParameter name="stroke">#000000</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,2</CssParameter>
-<CssParameter name="stroke-offset">-8</CssParameter>
-<CssParameter name="stroke-linejoin">round</CssParameter>
-      </LineSymbolizer>  
-    </Rule>     
+ <LineSymbolizer stroke="#FF0000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-2" stroke-width="2" /><LineSymbolizer stroke="#348017" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-4" stroke-width="2" /><LineSymbolizer stroke="#FFBA05" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-6" stroke-width="2" /><LineSymbolizer stroke="#000000" stroke-dasharray="2,2" stroke-linejoin="round" stroke-offset="-8" stroke-width="2" /></Rule>     
     
 </Style>
 

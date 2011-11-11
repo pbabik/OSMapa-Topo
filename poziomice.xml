@@ -1,68 +1,39 @@
-﻿<Map bgcolor="transparent" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+<Map background-color="transparent" minimum-version="0.7.2" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
 <Style name="contours10">
         <Rule>
                 <MaxScaleDenominator>25000</MaxScaleDenominator>
                 <MinScaleDenominator>5000</MinScaleDenominator>
-                <LineSymbolizer>
-                        <CssParameter name="stroke">#b58000</CssParameter>
-                        <CssParameter name="stroke-width">0.5</CssParameter>
-                </LineSymbolizer>
-        </Rule>
+                <LineSymbolizer stroke="#b58000" stroke-width="0.5" /></Rule>
 </Style>
 
 <Style name="contours20">
         <Rule>
                 <MaxScaleDenominator>50000</MaxScaleDenominator>
                 <MinScaleDenominator>25000</MinScaleDenominator>
-                <LineSymbolizer>
-                        <CssParameter name="stroke">#b58000</CssParameter>
-                        <CssParameter name="stroke-width">0.5</CssParameter>
-                        <CssParameter name="stroke-linejoin">round</CssParameter>
-                </LineSymbolizer>
-        </Rule>
+                <LineSymbolizer stroke="#b58000" stroke-linejoin="round" stroke-width="0.5" /></Rule>
 </Style>
 
 <Style name="contours50">
         <Rule>
                 <MaxScaleDenominator>200000</MaxScaleDenominator>
                 <MinScaleDenominator>50000</MinScaleDenominator>
-                <LineSymbolizer>
-                        <CssParameter name="stroke">#b58000</CssParameter>
-                        <CssParameter name="stroke-width">0.6</CssParameter>
-                        <CssParameter name="stroke-linejoin">round</CssParameter>
-                </LineSymbolizer>
-        </Rule>
+                <LineSymbolizer stroke="#b58000" stroke-linejoin="round" stroke-width="0.6" /></Rule>
         <Rule>
                 <MaxScaleDenominator>25000</MaxScaleDenominator>
                 <MinScaleDenominator>5000</MinScaleDenominator>
-                <LineSymbolizer>
-                        <CssParameter name="stroke">#b58000</CssParameter>
-                        <CssParameter name="stroke-width">0.6</CssParameter>
-                        <CssParameter name="stroke-linejoin">round</CssParameter>
-                </LineSymbolizer>
-                <TextSymbolizer name="height" face_name="DejaVu Sans Book" size="8" fill="#b58000" halo_radius="1" placement="line" max_char_angle_delta="40" />
+                <LineSymbolizer stroke="#b58000" stroke-linejoin="round" stroke-width="0.6" /><TextSymbolizer face-name="DejaVu Sans Book" fill="#b58000" halo-radius="1" max-char-angle-delta="40" placement="line" size="8">[height]</TextSymbolizer>
         </Rule>
 </Style>
 <Style name="contours100">
         <Rule>
                 <MaxScaleDenominator>200000</MaxScaleDenominator>
                 <MinScaleDenominator>50000</MinScaleDenominator>
-                <LineSymbolizer>
-                        <CssParameter name="stroke">#b58000</CssParameter>
-                        <CssParameter name="stroke-width">1</CssParameter>
-                        <CssParameter name="stroke-linejoin">round</CssParameter>
-                </LineSymbolizer>
-                <TextSymbolizer name="height" face_name="DejaVu Sans Book" size="8" fill="#b58000" halo_radius="1" placement="line" max_char_angle_delta="40" />
+                <LineSymbolizer stroke="#b58000" stroke-linejoin="round" stroke-width="1" /><TextSymbolizer face-name="DejaVu Sans Book" fill="#b58000" halo-radius="1" max-char-angle-delta="40" placement="line" size="8">[height]</TextSymbolizer>
         </Rule>
         <Rule>
                 <MaxScaleDenominator>50000</MaxScaleDenominator>
                 <MinScaleDenominator>5000</MinScaleDenominator>
-                <LineSymbolizer>
-                        <CssParameter name="stroke">#b58000</CssParameter>
-                        <CssParameter name="stroke-width">1.2</CssParameter>
-                        <CssParameter name="stroke-linejoin">round</CssParameter>
-                </LineSymbolizer>
-                <TextSymbolizer name="height" face_name="DejaVu Sans Book" size="8" fill="#b58000" halo_radius="1" placement="line" max_char_angle_delta="40" />
+                <LineSymbolizer stroke="#b58000" stroke-linejoin="round" stroke-width="1.2" /><TextSymbolizer face-name="DejaVu Sans Book" fill="#b58000" halo-radius="1" max-char-angle-delta="40" placement="line" size="8">[height]</TextSymbolizer>
         </Rule>
 </Style>
 
