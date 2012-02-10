@@ -2667,7 +2667,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>250000</MaxScaleDenominator>
 <MinScaleDenominator>50000</MinScaleDenominator>
-<Filter>[landuse] = 'residential' or [landuse] = 'retail' or [landuse] = 'commercial'</Filter>
+<Filter>[landuse] = 'residential' or [landuse] = 'retail' or [landuse] = 'commercial' or [landuse] = 'farmyard'</Filter>
       <PolygonSymbolizer>
         <CssParameter name="fill">#ecd173</CssParameter>
                 <CssParameter name="fill-opacity">0.8</CssParameter>
@@ -2675,7 +2675,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-<Filter>[landuse] = 'residential' or [landuse] = 'retail' or [landuse] = 'commercial'</Filter>
+<Filter>[landuse] = 'residential' or [landuse] = 'retail' or [landuse] = 'commercial' or [landuse] = 'farmyard'</Filter>
       <PolygonSymbolizer>
         <CssParameter name="fill">#ecd173</CssParameter>
                 <CssParameter name="fill-opacity">0.8</CssParameter>
@@ -2697,15 +2697,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">0.1</CssParameter>
       </LineSymbolizer>
-    </Rule>
-    
-    <Rule>
-<MaxScaleDenominator>100000</MaxScaleDenominator>
-<Filter>[landuse] = 'farm' or [landuse]='farmland'</Filter>
-      <PolygonSymbolizer>
-        <CssParameter name="fill">#ac784e</CssParameter>
-                <CssParameter name="fill-opacity">0.5</CssParameter>
-      </PolygonSymbolizer>
     </Rule>
 
 <Rule>
