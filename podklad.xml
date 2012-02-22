@@ -1,4 +1,4 @@
-﻿<Map bgcolor="#FFFEE7" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
+?<Map bgcolor="#FFFEE7" srs="+proj=tmerc +lat_0=0 +lon_0=19 +k=0.9993 +x_0=500000 +y_0=-5300000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs">
 <!--oczywiście możesz tu wpisać cokolwiek. Ale zanim wkleisz "+proj=merc +a=6378137 +b=6378137..." - POMYŚL!! To jest naprawdę BARDZO ZŁY UKŁAD, 
 o zniekształceniach rzędu 500 m/km! Dopóki nie robisz mapy globalnej, masz do dyspozycji masę innych - lepszych. Dla skali lokalnej dobrym wyborem będzie UTM (
 EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - koniecznie układ 1992 - EPSG:2180, taki jaki jest teraz. A dla Europy można użyć ETRS-LCC. !-->
@@ -536,7 +536,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and not [tunnel]&gt;='' and not [surface]='unpaved'</Filter>  
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and not [tunnel]&gt;='' and not ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')</Filter>  
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -546,7 +546,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and  [surface]='unpaved'</Filter>  
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and  ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')</Filter>  
       <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -572,7 +572,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and not [tunnel]&gt;='' and not [surface]='unpaved'</Filter>  
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and not [tunnel]&gt;='' and not ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')</Filter>  
 
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
@@ -583,7 +583,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and [surface]='unpaved'</Filter>  
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')</Filter>  
 
       <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
@@ -611,7 +611,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and not [tunnel]&gt;='' and not [surface]='unpaved'</Filter>  
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and not [tunnel]&gt;='' and not ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')</Filter>  
 
       <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
@@ -621,7 +621,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and [surface]='unpaved'</Filter>  
+      <Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road')  and ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')</Filter>  
 
       <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
@@ -676,7 +676,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
 
-      <Filter>([highway] = 'service'  and not [surface]='unpaved') and not [tunnel]&gt;='' </Filter>
+      <Filter>([highway] = 'service' and not ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay')) and not [tunnel]&gt;='' </Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -688,7 +688,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
 
-      <Filter>([highway] = 'service' and [surface]='unpaved' or [tracktype]='grade1') and not [tunnel]&gt;='' </Filter>
+      <Filter>([highway] = 'service' and ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay') or [tracktype]='grade1') and not [tunnel]&gt;='' </Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
         <CssParameter name="stroke-width">3.5</CssParameter>
@@ -700,7 +700,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 
-      <Filter>([highway] = 'service' and not [surface]='unpaved')  and not [tunnel]&gt;=''</Filter>
+      <Filter>([highway] = 'service' and not ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay'))  and not [tunnel]&gt;=''</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">4.5</CssParameter>
@@ -711,7 +711,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 
-      <Filter>([highway] = 'service'   and [surface]='unpaved' or [tracktype]='grade1') and not [tunnel]&gt;=''</Filter>
+      <Filter>([highway] = 'service' and ([surface]='unpaved' or [surface]='artificial_turf' or [surface]='compacted' or [surface]='concrete:lanes' or [surface]='dirt earth' or [surface]='fine_gravel' or [surface]='grass' or [surface]='grass_paver' or [surface]='gravel' or [surface]='ground' or [surface]='mud' or [surface]='pebblestone' or [surface]='sand' or [surface]='wood' or [surface]='clay') or [tracktype]='grade1') and not [tunnel]&gt;=''</Filter>
      <LineSymbolizer>
         <CssParameter name="stroke">#7b4e00</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -1307,8 +1307,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 </Rule>
 </Style>
 
-
-
 <Style name="koleje">
 <!--linie kolejowe-->
 <Rule>
@@ -1440,8 +1438,6 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       </LineSymbolizer>
     </Rule>
 </Style>
-
-
 
 <Style name="cieki">
 <!--wszystko, co płynie-->
@@ -1901,7 +1897,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'track' or [highway]='footway' or [highway]='path') and [bridge] &gt; ''</Filter> 
+      <Filter>([highway] = 'track' or [highway]='footway' or [highway]='path' or [highway]='bridleway') and [bridge] &gt; ''</Filter> 
  <LineSymbolizer>
         <CssParameter name="stroke">#000000</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1919,7 +1915,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps'</Filter>
+      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps' or [highway]='bridleway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">0.5</CssParameter>
@@ -1930,7 +1926,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps'</Filter>
+      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='steps' or [highway]='bridleway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -1940,7 +1936,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
     <Rule>
     <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'path' or [highway] = 'footway'</Filter>
+      <Filter>[highway] = 'path' or [highway] = 'footway' or [highway]='bridleway'</Filter>
       <LineSymbolizer>
         <CssParameter name="stroke">#302226</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2140,7 +2136,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-<Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and not [tunnel]&gt;='' </Filter>
+<Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and not [tunnel]&gt;='' and not ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
  <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
@@ -2152,7 +2148,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-<Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' ) and not [tunnel]&gt;='' </Filter>
+<Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' ) and not [tunnel]&gt;='' and not ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
  <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -2164,7 +2160,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
 
-<Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' ) and not [tunnel]&gt;=''</Filter>
+<Filter>([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road' ) and not [tunnel]&gt;=''and not ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
  <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -2176,7 +2172,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'service'  and not [tunnel]&gt;=''</Filter>
+      <Filter>[highway] = 'service'  and not [tunnel]&gt;='' and not ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2187,7 +2183,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;=''</Filter>
+      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;='' and not ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
         <CssParameter name="stroke-width">2.5</CssParameter>
@@ -2197,9 +2193,41 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
 <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;=''</Filter>
+      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;='' and not ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#FFFFFF</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+      </LineSymbolizer>  
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>50000</MaxScaleDenominator>
+<MinScaleDenominator>25000</MinScaleDenominator>
+      <Filter>[highway] = 'service'  and not [tunnel]&gt;='' and ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
+	    <LineSymbolizer>
+        <CssParameter name="stroke">#ddd</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>25000</MaxScaleDenominator>
+<MinScaleDenominator>10000</MinScaleDenominator>
+      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;='' and ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
+	    <LineSymbolizer>
+        <CssParameter name="stroke">#ddd</CssParameter>
+        <CssParameter name="stroke-width">2.5</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+      </LineSymbolizer>   
+    </Rule>
+
+<Rule>
+<MaxScaleDenominator>10000</MaxScaleDenominator>
+      <Filter>([highway] = 'service' or [tracktype]='grade1')  and not [tunnel]&gt;='' and ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett')</Filter>
+	    <LineSymbolizer>
+        <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
       </LineSymbolizer>  
@@ -2208,7 +2236,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
    <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
 <MinScaleDenominator>25000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian' or (([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett'))</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -2219,7 +2247,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
    <Rule>
 <MaxScaleDenominator>25000</MaxScaleDenominator>
 <MinScaleDenominator>10000</MinScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian' or (([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett'))</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -2229,7 +2257,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
 
    <Rule>
 <MaxScaleDenominator>10000</MaxScaleDenominator>
-      <Filter>[highway] = 'living_street' or [highway]='pedestrian'</Filter>
+      <Filter>[highway] = 'living_street' or [highway]='pedestrian' or (([highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'minor' or [highway] = 'road') and ([surface]='paving_stones' or [surface]='cobblestone' or [surface]='sett'))</Filter>
 	    <LineSymbolizer>
         <CssParameter name="stroke">#ddd</CssParameter>
         <CssParameter name="stroke-width">5</CssParameter>
@@ -2803,7 +2831,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     </Rule>
 <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>
-<Filter>[leisure]='nature_reserve'</Filter>
+<Filter>[leisure]='nature_reserve' or [boundary]='protected_area'</Filter>
 <LineSymbolizer>
 <CssParameter name="stroke">#007f00</CssParameter>
 <CssParameter name="stroke-width">2</CssParameter>
@@ -3203,7 +3231,7 @@ EPSG:32633 dla zachodniej Polski lub 32634 dla wschodniej). Dla całej Polski - 
     
       <Rule>
 <MaxScaleDenominator>50000</MaxScaleDenominator>    
-<Filter>[leisure]='nature_reserve'</Filter>
+<Filter>[leisure]='nature_reserve' or [boundary]='protected_area'</Filter>
 <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="12" fill="#348017" halo_radius="1"  placement="point" wrap_width="20"/>    
     </Rule>
     
